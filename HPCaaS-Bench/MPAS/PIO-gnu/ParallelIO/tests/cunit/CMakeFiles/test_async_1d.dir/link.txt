@@ -1,0 +1,1 @@
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99 -g -O0 -dynamic CMakeFiles/test_async_1d.dir/test_async_1d.c.o -o test_async_1d  ../../src/clib/libpioc.a /opt/cray/pe/netcdf/4.9.0.3/GNU/9.1/lib/libnetcdf.so /opt/cray/pe/parallel-netcdf/1.12.3.3/GNU/9.1/lib/libpnetcdf.so 

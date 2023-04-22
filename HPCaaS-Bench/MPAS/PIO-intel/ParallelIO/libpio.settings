@@ -1,0 +1,38 @@
+# PIO Configuration Summary
+==============================
+
+# General
+-------
+PIO Version:		2.5.9
+Configured On:		Wed 28 Sep 2022 09:24:39 AM CDT
+Host System:		x86_64-Linux-5.3.18-150300.59.43_11.0.48-cray_shasta_c
+Build Directory: 	/lus/cls01075/anberu/PIO/ParallelIO
+Install Prefix:         /lus/cls01075/anberu/PIO/PIO
+
+# Compiling Options
+-----------------
+C Compiler:		Intel 20.2.4.20210910
+CFLAGS:			 -std=c99 -debug minimal  
+CPPFLAGS:		 -DLINUX -DCPRINTEL -DLOGGING -I/lus/cls01075/anberu/PIO/ParallelIO -I/lus/cls01075/anberu/PIO/ParallelIO/src/clib -I/lus/cls01075/anberu/PIO/ParallelIO/src/clib -I/lus/cls01075/anberu/PIO/ParallelIO/src/clib -I/lus/cls01075/anberu/PIO/ParallelIO/src/clib/../ncint -I/opt/cray/pe/netcdf/4.8.1.3/INTEL/19.0/include -I/opt/cray/pe/parallel-netcdf/1.12.2.3/INTEL/19.0/include
+LDFLAGS:		 
+Shared Library:		no
+Static Library:		yes
+Extra libraries:	
+
+Fortran Compiler:       Intel 20.2.4.20210910
+FFLAGS:                  -debug minimal
+FCFLAGS:                
+More Fortran Flags:	 -DLINUX -DCPRINTEL -I/lus/cls01075/anberu/PIO/ParallelIO -I/lus/cls01075/anberu/PIO/ParallelIO/src/flib -I/lus/cls01075/anberu/PIO/ParallelIO/src/flib -I/opt/cray/pe/netcdf/4.8.1.3/INTEL/19.0/include -I/opt/cray/pe/parallel-netcdf/1.12.2.3/INTEL/19.0/include
+
+# Features
+--------
+PnetCDF Support:	yes
+SZIP Write Support:	no
+Parallel Filters:	yes
+NetCDF/HDF5 Support:	yes
+NetCDF/HDF5 Par I/O:	no
+NetCDF Integration:	no
+PIO Logging:		no
+MPIEXEC:		mpiexec
+Fortran:		yes
+

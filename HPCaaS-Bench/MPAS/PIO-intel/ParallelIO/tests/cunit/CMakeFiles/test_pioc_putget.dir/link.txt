@@ -1,0 +1,1 @@
+/opt/cray/pe/craype/2.7.15/bin/cc  -std=c99 -g -O0  -rdynamic CMakeFiles/test_pioc_putget.dir/test_pioc_putget.c.o CMakeFiles/test_pioc_putget.dir/test_common.c.o CMakeFiles/test_pioc_putget.dir/test_shared.c.o  -o test_pioc_putget  ../../src/clib/libpioc.a /opt/cray/pe/netcdf/4.8.1.3/INTEL/19.0/lib/libnetcdf.so /opt/cray/pe/parallel-netcdf/1.12.2.3/INTEL/19.0/lib/libpnetcdf.so 

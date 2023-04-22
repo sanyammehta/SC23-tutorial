@@ -1,0 +1,1 @@
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99 -g -O0 -dynamic CMakeFiles/test_darray_fill.dir/test_darray_fill.c.o CMakeFiles/test_darray_fill.dir/test_common.c.o -o test_darray_fill  ../../src/clib/libpioc.a /opt/cray/pe/netcdf/4.9.0.3/CRAYCLANG/14.0/lib/libnetcdf.so /opt/cray/pe/parallel-netcdf/1.12.3.3/CRAYCLANG/14.0/lib/libpnetcdf.so 

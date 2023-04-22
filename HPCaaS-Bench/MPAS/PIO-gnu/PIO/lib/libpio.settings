@@ -1,0 +1,38 @@
+# PIO Configuration Summary
+==============================
+
+# General
+-------
+PIO Version:		2.5.10
+Configured On:		Thu 30 Mar 2023 04:39:34 PM CDT
+Host System:		x86_64-Linux-5.14.21-150400.24.11_12.0.57-cray_shasta_c
+Build Directory: 	/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO
+Install Prefix:         /lus/scratch/smehta/MPAS/PIO-gnu/PIO
+
+# Compiling Options
+-----------------
+C Compiler:		GNU 12.2.0
+CFLAGS:			 -std=c99  
+CPPFLAGS:		 -DLINUX -DCPRGNU -DLOGGING -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/src/clib -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/src/clib -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/src/clib -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/src/clib/../ncint -I/opt/cray/pe/netcdf/4.9.0.3/GNU/9.1/include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/GNU/9.1/include
+LDFLAGS:		 
+Shared Library:		no
+Static Library:		yes
+Extra libraries:	
+
+Fortran Compiler:       GNU 12.2.0
+FFLAGS:                  -fallow-argument-mismatch
+FCFLAGS:                
+More Fortran Flags:	 -DLINUX -DCPRGNU -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/src/flib -I/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/src/flib -I/opt/cray/pe/netcdf/4.9.0.3/GNU/9.1/include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/GNU/9.1/include
+
+# Features
+--------
+PnetCDF Support:	yes
+SZIP Write Support:	no
+Parallel Filters:	yes
+NetCDF/HDF5 Support:	yes
+NetCDF/HDF5 Par I/O:	no
+NetCDF Integration:	no
+PIO Logging:		no
+MPIEXEC:		mpiexec
+Fortran:		yes
+

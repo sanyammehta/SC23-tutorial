@@ -1,0 +1,1 @@
+/opt/cray/pe/craype/2.7.15/bin/ftn    CMakeFiles/ncdf_inq.dir/ncdf_inq.F90.o  -o ncdf_inq  libpio_tutil.a ../../src/flib/libpiof.a /opt/cray/pe/netcdf/4.8.1.3/INTEL/19.0/lib/libnetcdff.so ../../src/clib/libpioc.a /opt/cray/pe/netcdf/4.8.1.3/INTEL/19.0/lib/libnetcdf.so /opt/cray/pe/parallel-netcdf/1.12.2.3/INTEL/19.0/lib/libpnetcdf.so -lirng -ldecimal -lcilkrts -lstdc++ 

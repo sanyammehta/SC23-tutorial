@@ -1,0 +1,38 @@
+# PIO Configuration Summary
+==============================
+
+# General
+-------
+PIO Version:		2.5.10
+Configured On:		Thu 30 Mar 2023 04:29:53 PM CDT
+Host System:		x86_64-Linux-5.14.21-150400.24.11_12.0.57-cray_shasta_c
+Build Directory: 	/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO
+Install Prefix:         /lus/scratch/smehta/MPAS/PIO-cray/PIO
+
+# Compiling Options
+-----------------
+C Compiler:		Clang 15.0.6
+CFLAGS:			 -std=c99  
+CPPFLAGS:		 -DLINUX -DCPRCLANG -DLOGGING -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/src/clib -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/src/clib -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/src/clib -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/src/clib/../ncint -I/opt/cray/pe/netcdf/4.9.0.3/CRAYCLANG/14.0/include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/CRAYCLANG/14.0/include
+LDFLAGS:		 
+Shared Library:		no
+Static Library:		yes
+Extra libraries:	
+
+Fortran Compiler:       Cray 15.0.1
+FFLAGS:                  -ef
+FCFLAGS:                
+More Fortran Flags:	 -DLINUX -DCPRCRAY -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/src/flib -I/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/src/flib -I/opt/cray/pe/netcdf/4.9.0.3/CRAYCLANG/14.0/include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/CRAYCLANG/14.0/include
+
+# Features
+--------
+PnetCDF Support:	yes
+SZIP Write Support:	no
+Parallel Filters:	yes
+NetCDF/HDF5 Support:	yes
+NetCDF/HDF5 Par I/O:	no
+NetCDF Integration:	no
+PIO Logging:		no
+MPIEXEC:		mpiexec
+Fortran:		yes
+

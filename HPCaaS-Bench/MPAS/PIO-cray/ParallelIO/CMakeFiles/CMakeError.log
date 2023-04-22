@@ -1,0 +1,258 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+Warning: --target=arm-arm-none-eabi option ignored.
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+Warning: --target=arm-arm-none-eabi option ignored.
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9ab1a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ab1a.dir/build.make CMakeFiles/cmTC_9ab1a.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ab1a.dir/CMakeCCompilerABI.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc    -o CMakeFiles/cmTC_9ab1a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+gmake[1]: *** [CMakeFiles/cmTC_9ab1a.dir/build.make:78: CMakeFiles/cmTC_9ab1a.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9ab1a/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bd027/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bd027.dir/build.make CMakeFiles/cmTC_bd027.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd027.dir/testCCompiler.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc    -o CMakeFiles/cmTC_bd027.dir/testCCompiler.c.o -c /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/testCCompiler.c
+Error:  Unable to find cray-libsci/23.02.1.1 libraries compatible with intel/2021.4.0 targeting 'x86-milan'.
+
+gmake[1]: *** [CMakeFiles/cmTC_bd027.dir/build.make:78: CMakeFiles/cmTC_bd027.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bd027/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_NETCDF_PAR failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0353d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0353d.dir/build.make CMakeFiles/cmTC_0353d.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0353d.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_NETCDF_PAR   -MD -MT CMakeFiles/cmTC_0353d.dir/src.c.o -MF CMakeFiles/cmTC_0353d.dir/src.c.o.d -o CMakeFiles/cmTC_0353d.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'choke'
+      choke me
+      ^
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:15: error: expected ';' after top level declarator
+      choke me
+              ^
+              ;
+2 errors generated.
+gmake[1]: *** [CMakeFiles/cmTC_0353d.dir/build.make:79: CMakeFiles/cmTC_0353d.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0353d/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_PARALLEL
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_SZIP_WRITE failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_daeff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_daeff.dir/build.make CMakeFiles/cmTC_daeff.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_daeff.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_SZIP_WRITE   -MD -MT CMakeFiles/cmTC_daeff.dir/src.c.o -MF CMakeFiles/cmTC_daeff.dir/src.c.o.d -o CMakeFiles/cmTC_daeff.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'choke'
+      choke me
+      ^
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:15: error: expected ';' after top level declarator
+      choke me
+              ^
+              ;
+2 errors generated.
+gmake[1]: *** [CMakeFiles/cmTC_daeff.dir/build.make:79: CMakeFiles/cmTC_daeff.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_daeff/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_SZIP_WRITE
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_472 failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_476f9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_476f9.dir/build.make CMakeFiles/cmTC_476f9.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_476f9.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_472   -MD -MT CMakeFiles/cmTC_476f9.dir/src.c.o -MF CMakeFiles/cmTC_476f9.dir/src.c.o.d -o CMakeFiles/cmTC_476f9.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:5:7: error: unknown type name 'choke'
+      choke me
+      ^
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:5:15: error: expected ';' after top level declarator
+      choke me
+              ^
+              ;
+2 errors generated.
+gmake[1]: *** [CMakeFiles/cmTC_476f9.dir/build.make:79: CMakeFiles/cmTC_476f9.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_476f9/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if NC_VERSION_MAJOR == 4 && NC_VERSION_MINOR == 7 && NC_VERSION_PATCH == 2
+#else
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_DISPATCH2 failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4dd8f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4dd8f.dir/build.make CMakeFiles/cmTC_4dd8f.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4dd8f.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_DISPATCH2   -MD -MT CMakeFiles/cmTC_4dd8f.dir/src.c.o -MF CMakeFiles/cmTC_4dd8f.dir/src.c.o.d -o CMakeFiles/cmTC_4dd8f.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'choke'
+      choke me
+      ^
+/lus/scratch/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:15: error: expected ';' after top level declarator
+      choke me
+              ^
+              ;
+2 errors generated.
+gmake[1]: *** [CMakeFiles/cmTC_4dd8f.dir/build.make:79: CMakeFiles/cmTC_4dd8f.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-cray/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4dd8f/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if NC_DISPATCH_VERSION != 2
+      choke me
+#endif
+int main() {return 0;}

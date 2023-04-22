@@ -1,0 +1,113 @@
+Performing C SOURCE FILE Test HAVE_NETCDF_PAR failed with the following output:
+Change Dir: /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_77e75/fast && /usr/bin/gmake -f CMakeFiles/cmTC_77e75.dir/build.make CMakeFiles/cmTC_77e75.dir/build
+gmake[1]: Entering directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77e75.dir/src.c.o
+/opt/cray/pe/craype/2.7.15/bin/cc   -DHAVE_NETCDF_PAR   -o CMakeFiles/cmTC_77e75.dir/src.c.o   -c /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(4): error: identifier "choke" is undefined
+        choke me
+        ^
+
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(6): error: expected a ";"
+  int main() {return 0;}
+  ^
+
+compilation aborted for /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTC_77e75.dir/build.make:83: CMakeFiles/cmTC_77e75.dir/src.c.o] Error 2
+gmake[1]: Leaving directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:138: cmTC_77e75/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_PARALLEL
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_SZIP_WRITE failed with the following output:
+Change Dir: /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b8880/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b8880.dir/build.make CMakeFiles/cmTC_b8880.dir/build
+gmake[1]: Entering directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8880.dir/src.c.o
+/opt/cray/pe/craype/2.7.15/bin/cc   -DHAVE_SZIP_WRITE   -o CMakeFiles/cmTC_b8880.dir/src.c.o   -c /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(4): error: identifier "choke" is undefined
+        choke me
+        ^
+
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(6): error: expected a ";"
+  int main() {return 0;}
+  ^
+
+compilation aborted for /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTC_b8880.dir/build.make:83: CMakeFiles/cmTC_b8880.dir/src.c.o] Error 2
+gmake[1]: Leaving directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:138: cmTC_b8880/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_SZIP_WRITE
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_472 failed with the following output:
+Change Dir: /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_43602/fast && /usr/bin/gmake -f CMakeFiles/cmTC_43602.dir/build.make CMakeFiles/cmTC_43602.dir/build
+gmake[1]: Entering directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43602.dir/src.c.o
+/opt/cray/pe/craype/2.7.15/bin/cc   -DHAVE_472   -o CMakeFiles/cmTC_43602.dir/src.c.o   -c /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(5): error: identifier "choke" is undefined
+        choke me
+        ^
+
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(7): error: expected a ";"
+  int main() {return 0;}
+  ^
+
+compilation aborted for /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTC_43602.dir/build.make:83: CMakeFiles/cmTC_43602.dir/src.c.o] Error 2
+gmake[1]: Leaving directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:138: cmTC_43602/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if NC_VERSION_MAJOR == 4 && NC_VERSION_MINOR == 7 && NC_VERSION_PATCH == 2
+#else
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_DISPATCH2 failed with the following output:
+Change Dir: /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3f014/fast && /usr/bin/gmake -f CMakeFiles/cmTC_3f014.dir/build.make CMakeFiles/cmTC_3f014.dir/build
+gmake[1]: Entering directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f014.dir/src.c.o
+/opt/cray/pe/craype/2.7.15/bin/cc   -DHAVE_DISPATCH2   -o CMakeFiles/cmTC_3f014.dir/src.c.o   -c /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(4): error: identifier "choke" is undefined
+        choke me
+        ^
+
+/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c(6): error: expected a ";"
+  int main() {return 0;}
+  ^
+
+compilation aborted for /lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp/src.c (code 2)
+gmake[1]: *** [CMakeFiles/cmTC_3f014.dir/build.make:83: CMakeFiles/cmTC_3f014.dir/src.c.o] Error 2
+gmake[1]: Leaving directory '/lus/cls01075/anberu/PIO/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:138: cmTC_3f014/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if NC_DISPATCH_VERSION != 2
+      choke me
+#endif
+int main() {return 0;}

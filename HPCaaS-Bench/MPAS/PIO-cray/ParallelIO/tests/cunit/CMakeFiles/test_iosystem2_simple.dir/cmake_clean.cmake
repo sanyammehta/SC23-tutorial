@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/test_iosystem2_simple.dir/test_common.c.o"
+  "CMakeFiles/test_iosystem2_simple.dir/test_common.c.o.d"
+  "CMakeFiles/test_iosystem2_simple.dir/test_iosystem2_simple.c.o"
+  "CMakeFiles/test_iosystem2_simple.dir/test_iosystem2_simple.c.o.d"
+  "test_iosystem2_simple"
+  "test_iosystem2_simple.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/test_iosystem2_simple.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

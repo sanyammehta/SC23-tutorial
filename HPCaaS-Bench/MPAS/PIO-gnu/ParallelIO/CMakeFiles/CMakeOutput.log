@@ -1,0 +1,776 @@
+The system is: Linux - 5.14.21-150400.24.11_12.0.57-cray_shasta_c - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/3.20.4/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50018/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50018.dir/build.make CMakeFiles/cmTC_50018.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -v -o CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gcc
+Target: x86_64-suse-linux
+Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 20220819 (HPE) (GCC) 
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_50018.dir/'
+ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/cc1 -quiet -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -D __CRAY_X86_MILAN -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_50018.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=znver3 -version -o /tmp/ccHZi7E7.s
+GNU C17 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)
+	compiled by GNU C version 12.2.0 20220819 (HPE), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../x86_64-suse-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include
+ /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include
+ /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include
+ /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include
+ /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include
+ /usr/local/include
+ /opt/cray/pe/gcc/12.2.0/snos/include
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)
+	compiled by GNU C version 12.2.0 20220819 (HPE), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2c7f1a5d32ef7d812b1411e00490b8b1
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_50018.dir/'
+ as -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include --64 -o CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o /tmp/ccHZi7E7.s
+GNU assembler version 2.37 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.37.20211103-150100.7.37
+COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_50018
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50018.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -v CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o -o cmTC_50018 
+Using built-in specs.
+COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 20220819 (HPE) (GCC) 
+COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_50018' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-dumpdir' 'cmTC_50018.'
+ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2 -plugin /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so -plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZSw4x6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_50018 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../.. CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --as-needed -lpnetcdf --no-as-needed -lmpichf90 --as-needed -lnetcdf --no-as-needed --as-needed -lhdf5_hl --no-as-needed --as-needed -lhdf5 --no-as-needed --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed -ldl --as-needed -lmpi_gnu_91 --no-as-needed --as-needed -ldsmml --no-as-needed -lxpmem --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o /usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_50018' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-dumpdir' 'cmTC_50018.'
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include]
+    add: [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include]
+    add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+    add: [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include]
+    add: [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include]
+    add: [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include]
+    add: [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include]
+    add: [/usr/local/include]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/include]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include] ==> [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include]
+  collapse include dir [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include] ==> [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include]
+  collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+  collapse include dir [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include] ==> [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include]
+  collapse include dir [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include] ==> [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include]
+  collapse include dir [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include] ==> [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include]
+  collapse include dir [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include] ==> [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/include] ==> [/opt/cray/pe/gcc/12.2.0/snos/include]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include;/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include;/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include;/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include;/usr/local/include;/opt/cray/pe/gcc/12.2.0/snos/include;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50018/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50018.dir/build.make CMakeFiles/cmTC_50018.dir/build]
+  ignore line: [gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/cray/pe/craype/2.7.20/bin/cc   -v -o CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gcc]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c c++ fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 20220819 (HPE) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_50018.dir/']
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/cc1 -quiet -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -D __CRAY_X86_MILAN -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_50018.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=znver3 -version -o /tmp/ccHZi7E7.s]
+  ignore line: [GNU C17 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.2.0 20220819 (HPE)  GMP version 6.0.0  MPFR version 3.1.3  MPC version 1.0.3  isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../x86_64-suse-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include]
+  ignore line: [ /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include]
+  ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+  ignore line: [ /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include]
+  ignore line: [ /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include]
+  ignore line: [ /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include]
+  ignore line: [ /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/include]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.2.0 20220819 (HPE)  GMP version 6.0.0  MPFR version 3.1.3  MPC version 1.0.3  isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2c7f1a5d32ef7d812b1411e00490b8b1]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_50018.dir/']
+  ignore line: [ as -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include --64 -o CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o /tmp/ccHZi7E7.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.37.20211103-150100.7.37]
+  ignore line: [COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_50018]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50018.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.7.20/bin/cc  -v CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o -o cmTC_50018 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c c++ fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 20220819 (HPE) (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_50018' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-dumpdir' 'cmTC_50018.']
+  link line: [ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2 -plugin /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so -plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZSw4x6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_50018 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../.. CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --as-needed -lpnetcdf --no-as-needed -lmpichf90 --as-needed -lnetcdf --no-as-needed --as-needed -lhdf5_hl --no-as-needed --as-needed -lhdf5 --no-as-needed --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed -ldl --as-needed -lmpi_gnu_91 --no-as-needed --as-needed -ldsmml --no-as-needed -lxpmem --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccZSw4x6.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_50018] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+    arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+    arg [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o] ==> obj [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o]
+    arg [-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib]
+    arg [-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib] ==> dir [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib]
+    arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+    arg [-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib] ==> dir [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib]
+    arg [-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib] ==> dir [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib]
+    arg [-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib] ==> dir [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib]
+    arg [-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64] ==> dir [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64]
+    arg [-L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0] ==> dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0]
+    arg [-L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64] ==> dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../..] ==> dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../..]
+    arg [CMakeFiles/cmTC_50018.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-rpath=/opt/cray/pe/gcc-libs] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpnetcdf] ==> lib [pnetcdf]
+    arg [--no-as-needed] ==> ignore
+    arg [-lmpichf90] ==> lib [mpichf90]
+    arg [--as-needed] ==> ignore
+    arg [-lnetcdf] ==> lib [netcdf]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lhdf5_hl] ==> lib [hdf5_hl]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lhdf5] ==> lib [hdf5]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82_mpi] ==> lib [sci_gnu_82_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82] ==> lib [sci_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lmpi_gnu_91] ==> lib [mpi_gnu_91]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-ldsmml] ==> lib [dsmml]
+    arg [--no-as-needed] ==> ignore
+    arg [-lxpmem] ==> lib [xpmem]
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmvec] ==> lib [mvec]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o] ==> obj [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o]
+    arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+  collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib] ==> [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib]
+  collapse library dir [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib] ==> [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib]
+  collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+  collapse library dir [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib] ==> [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib]
+  collapse library dir [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib] ==> [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib]
+  collapse library dir [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib] ==> [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib]
+  collapse library dir [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64] ==> [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64]
+  collapse library dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0]
+  collapse library dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../..] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib]
+  implicit libs: [pnetcdf;mpichf90;netcdf;hdf5_hl;hdf5;sci_gnu_82_mpi;sci_gnu_82;dl;mpi_gnu_91;dsmml;xpmem;gfortran;quadmath;mvec;m;pthread;gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib;/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib;/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib;/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib;/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0;/opt/cray/pe/gcc/12.2.0/snos/lib64;/lib64;/usr/lib64;/opt/cray/pe/gcc/12.2.0/snos/lib]
+  implicit fwks: []
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /opt/cray/pe/craype/2.7.20/bin/ftn 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran -march=znver3 -D__CRAY_X86_MILAN -D__CRAYXT_COMPUTE_LINUX_TARGET -D__TARGET_LINUX__ -v CMakeFortranCompilerId.F -Wl,-rpath=/opt/cray/pe/gcc-libs -Wl,-Bdynamic -I/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I/opt/cray/pe/dsmml/0.2.2/dsmml//include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -Wl,--as-needed,-lpnetcdf,--no-as-needed -lmpichf90 -Wl,--as-needed,-lnetcdf,--no-as-needed -Wl,--as-needed,-lnetcdff,--no-as-needed -Wl,--as-needed,-lhdf5_hl,--no-as-needed -Wl,--as-needed,-lhdf5,--no-as-needed -Wl,--as-needed,-lhdf5hl_fortran,--no-as-needed -Wl,--as-needed,-lhdf5_fortran,--no-as-needed -Wl,--as-needed,-lsci_gnu_82_mpi,--no-as-needed -Wl,--as-needed,-lsci_gnu_82,--no-as-needed -ldl -Wl,--as-needed,-lmpifort_gnu_91,--no-as-needed -Wl,--as-needed,-lmpi_gnu_91,--no-as-needed -Wl,--as-needed,-ldsmml,--no-as-needed -lxpmem -Wl,--as-needed,-lgfortran,-lquadmath,--no-as-needed -Wl,--as-needed,-lpthread,--no-as-needed -Wl,--disable-new-dtags -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 20220819 (HPE) (GCC) 
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'a-'
+ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/cceM8QbA.f90 -quiet -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -D __CRAY_X86_MILAN -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ CMakeFortranCompilerId.F -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -march=znver3 -version -fintrinsic-modules-path /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccug5spA.s
+GNU Fortran (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)
+	compiled by GNU C version 12.2.0 20220819 (HPE), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../x86_64-suse-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include
+ /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include
+ /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include
+ /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include
+ /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include
+ /usr/local/include
+ /opt/cray/pe/gcc/12.2.0/snos/include
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)
+	compiled by GNU C version 12.2.0 20220819 (HPE), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'a-'
+ as -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include --64 -o /tmp/ccFaROCB.o /tmp/ccug5spA.s
+GNU assembler version 2.37 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.37.20211103-150100.7.37
+Reading specs from /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'a-'
+COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'a.'
+ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2 -plugin /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so -plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZVcawD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../.. /tmp/ccFaROCB.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --as-needed -lpnetcdf --no-as-needed -lmpichf90 --as-needed -lnetcdf --no-as-needed --as-needed -lnetcdff --no-as-needed --as-needed -lhdf5_hl --no-as-needed --as-needed -lhdf5 --no-as-needed --as-needed -lhdf5hl_fortran --no-as-needed --as-needed -lhdf5_fortran --no-as-needed --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed -ldl --as-needed -lmpifort_gnu_91 --no-as-needed --as-needed -lmpi_gnu_91 --no-as-needed --as-needed -ldsmml --no-as-needed -lxpmem --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o /usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'a.'
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/3.20.4/CompilerIdFortran/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f8d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f8d6.dir/build.make CMakeFiles/cmTC_9f8d6.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o
+/opt/cray/pe/craype/2.7.20/bin/ftn   -v -c /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o
+Using built-in specs.
+COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran
+Target: x86_64-suse-linux
+Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 20220819 (HPE) (GCC) 
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_9f8d6.dir/'
+ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/f951 /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cc2QyFEf.f90 -quiet -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -D __CRAY_X86_MILAN -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -quiet -dumpdir CMakeFiles/cmTC_9f8d6.dir/ -dumpbase CMakeFortranCompilerABI.F.F -dumpbase-ext .F -march=znver3 -version -fintrinsic-modules-path /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccZiXtrg.s
+GNU Fortran (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)
+	compiled by GNU C version 12.2.0 20220819 (HPE), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../x86_64-suse-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include
+ /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include
+ /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include
+ /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include
+ /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include
+ /usr/local/include
+ /opt/cray/pe/gcc/12.2.0/snos/include
+ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)
+	compiled by GNU C version 12.2.0 20220819 (HPE), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_9f8d6.dir/'
+ as -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include --64 -o CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o /tmp/ccZiXtrg.s
+GNU assembler version 2.37 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.37.20211103-150100.7.37
+COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.'
+Linking Fortran executable cmTC_9f8d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f8d6.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/ftn  -v CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o -o cmTC_9f8d6 
+Driving: /opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran -march=znver3 -D__CRAY_X86_MILAN -D__CRAYXT_COMPUTE_LINUX_TARGET -D__TARGET_LINUX__ -v CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o -o cmTC_9f8d6 -Wl,-rpath=/opt/cray/pe/gcc-libs -Wl,-Bdynamic -I/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I/opt/cray/pe/dsmml/0.2.2/dsmml//include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -Wl,--as-needed,-lpnetcdf,--no-as-needed -lmpichf90 -Wl,--as-needed,-lnetcdf,--no-as-needed -Wl,--as-needed,-lnetcdff,--no-as-needed -Wl,--as-needed,-lhdf5_hl,--no-as-needed -Wl,--as-needed,-lhdf5,--no-as-needed -Wl,--as-needed,-lhdf5hl_fortran,--no-as-needed -Wl,--as-needed,-lhdf5_fortran,--no-as-needed -Wl,--as-needed,-lsci_gnu_82_mpi,--no-as-needed -Wl,--as-needed,-lsci_gnu_82,--no-as-needed -ldl -Wl,--as-needed,-lmpifort_gnu_91,--no-as-needed -Wl,--as-needed,-lmpi_gnu_91,--no-as-needed -Wl,--as-needed,-ldsmml,--no-as-needed -lxpmem -Wl,--as-needed,-lgfortran,-lquadmath,--no-as-needed -Wl,--as-needed,-lpthread,--no-as-needed -Wl,--disable-new-dtags -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 20220819 (HPE) (GCC) 
+Reading specs from /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_9f8d6' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'cmTC_9f8d6-'
+COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_9f8d6' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'cmTC_9f8d6.'
+ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2 -plugin /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so -plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce8fSxc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9f8d6 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../.. CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --as-needed -lpnetcdf --no-as-needed -lmpichf90 --as-needed -lnetcdf --no-as-needed --as-needed -lnetcdff --no-as-needed --as-needed -lhdf5_hl --no-as-needed --as-needed -lhdf5 --no-as-needed --as-needed -lhdf5hl_fortran --no-as-needed --as-needed -lhdf5_fortran --no-as-needed --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed -ldl --as-needed -lmpifort_gnu_91 --no-as-needed --as-needed -lmpi_gnu_91 --no-as-needed --as-needed -ldsmml --no-as-needed -lxpmem --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o /usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_9f8d6' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'cmTC_9f8d6.'
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include]
+    add: [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include]
+    add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+    add: [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include]
+    add: [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include]
+    add: [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include]
+    add: [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include]
+    add: [/usr/local/include]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/include]
+    add: [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include] ==> [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include]
+  collapse include dir [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include] ==> [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include]
+  collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+  collapse include dir [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include] ==> [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include]
+  collapse include dir [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include] ==> [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include]
+  collapse include dir [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include] ==> [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include]
+  collapse include dir [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include] ==> [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/include] ==> [/opt/cray/pe/gcc/12.2.0/snos/include]
+  collapse include dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include;/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include;/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include;/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include;/usr/local/include;/opt/cray/pe/gcc/12.2.0/snos/include;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed;/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f8d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f8d6.dir/build.make CMakeFiles/cmTC_9f8d6.dir/build]
+  ignore line: [gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/opt/cray/pe/craype/2.7.20/bin/ftn   -v -c /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c c++ fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 20220819 (HPE) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_9f8d6.dir/']
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/f951 /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cc2QyFEf.f90 -quiet -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -D __CRAY_X86_MILAN -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -quiet -dumpdir CMakeFiles/cmTC_9f8d6.dir/ -dumpbase CMakeFortranCompilerABI.F.F -dumpbase-ext .F -march=znver3 -version -fintrinsic-modules-path /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccZiXtrg.s]
+  ignore line: [GNU Fortran (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.2.0 20220819 (HPE)  GMP version 6.0.0  MPFR version 3.1.3  MPC version 1.0.3  isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../x86_64-suse-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include]
+  ignore line: [ /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include]
+  ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+  ignore line: [ /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include]
+  ignore line: [ /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include]
+  ignore line: [ /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include]
+  ignore line: [ /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/finclude]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/include]
+  ignore line: [ /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU Fortran2008 (GCC) version 12.2.0 20220819 (HPE) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.2.0 20220819 (HPE)  GMP version 6.0.0  MPFR version 3.1.3  MPC version 1.0.3  isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_9f8d6.dir/']
+  ignore line: [ as -v -I /opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I /opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I /opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I /opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I /opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include --64 -o CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o /tmp/ccZiXtrg.s]
+  ignore line: [GNU assembler version 2.37 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.37.20211103-150100.7.37]
+  ignore line: [COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-dumpdir' 'CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.']
+  ignore line: [Linking Fortran executable cmTC_9f8d6]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f8d6.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.7.20/bin/ftn  -v CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o -o cmTC_9f8d6 ]
+  ignore line: [Driving: /opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran -march=znver3 -D__CRAY_X86_MILAN -D__CRAYXT_COMPUTE_LINUX_TARGET -D__TARGET_LINUX__ -v CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o -o cmTC_9f8d6 -Wl,-rpath=/opt/cray/pe/gcc-libs -Wl,-Bdynamic -I/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include -I/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include -I/opt/cray/pe/dsmml/0.2.2/dsmml//include -I/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include -I/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include -I/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include -I/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -Wl,--as-needed,-lpnetcdf,--no-as-needed -lmpichf90 -Wl,--as-needed,-lnetcdf,--no-as-needed -Wl,--as-needed,-lnetcdff,--no-as-needed -Wl,--as-needed,-lhdf5_hl,--no-as-needed -Wl,--as-needed,-lhdf5,--no-as-needed -Wl,--as-needed,-lhdf5hl_fortran,--no-as-needed -Wl,--as-needed,-lhdf5_fortran,--no-as-needed -Wl,--as-needed,-lsci_gnu_82_mpi,--no-as-needed -Wl,--as-needed,-lsci_gnu_82,--no-as-needed -ldl -Wl,--as-needed,-lmpifort_gnu_91,--no-as-needed -Wl,--as-needed,-lmpi_gnu_91,--no-as-needed -Wl,--as-needed,-ldsmml,--no-as-needed -lxpmem -Wl,--as-needed,-lgfortran,-lquadmath,--no-as-needed -Wl,--as-needed,-lpthread,--no-as-needed -Wl,--disable-new-dtags -l gfortran -l m -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/cray/pe/gcc/12.2.0/bin/../snos/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cpe-gcc-12.2.0-202211182106.97b1815c41a72/configure --prefix=/opt/cray/pe/gcc/12.2.0/snos --disable-nls --libdir=/opt/cray/pe/gcc/12.2.0/snos/lib --enable-languages=c c++ fortran --with-gxx-include-dir=/opt/cray/pe/gcc/12.2.0/snos/include/g++ --with-slibdir=/opt/cray/pe/gcc/12.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 20220819 (HPE) (GCC) ]
+  ignore line: [Reading specs from /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_9f8d6' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'cmTC_9f8d6-']
+  ignore line: [COMPILER_PATH=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=znver3' '-D' '__CRAY_X86_MILAN' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_9f8d6' '-I' '/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/include' '-I' '/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-I' '/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/include' '-I' '/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/include' '-I' '/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/include' '-I' '/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/include' '-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib' '-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib' '-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib' '-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib' '-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64' '-shared-libgcc' '-dumpdir' 'cmTC_9f8d6.']
+  link line: [ /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2 -plugin /opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so -plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce8fSxc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9f8d6 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o -L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib -L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib -L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib -L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib -L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../.. CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --as-needed -lpnetcdf --no-as-needed -lmpichf90 --as-needed -lnetcdf --no-as-needed --as-needed -lnetcdff --no-as-needed --as-needed -lhdf5_hl --no-as-needed --as-needed -lhdf5 --no-as-needed --as-needed -lhdf5hl_fortran --no-as-needed --as-needed -lhdf5_fortran --no-as-needed --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed -ldl --as-needed -lmpifort_gnu_91 --no-as-needed --as-needed -lmpi_gnu_91 --no-as-needed --as-needed -ldsmml --no-as-needed -lxpmem --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/cray/pe/gcc/12.2.0/snos/libexec/gcc/x86_64-suse-linux/12.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cce8fSxc.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_9f8d6] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+    arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+    arg [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o] ==> obj [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o]
+    arg [-L/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib]
+    arg [-L/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib] ==> dir [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib]
+    arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+    arg [-L/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib] ==> dir [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib]
+    arg [-L/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib] ==> dir [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib]
+    arg [-L/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib] ==> dir [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib]
+    arg [-L/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64] ==> dir [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64]
+    arg [-L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0] ==> dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0]
+    arg [-L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64] ==> dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../..] ==> dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../..]
+    arg [CMakeFiles/cmTC_9f8d6.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-rpath=/opt/cray/pe/gcc-libs] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpnetcdf] ==> lib [pnetcdf]
+    arg [--no-as-needed] ==> ignore
+    arg [-lmpichf90] ==> lib [mpichf90]
+    arg [--as-needed] ==> ignore
+    arg [-lnetcdf] ==> lib [netcdf]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lnetcdff] ==> lib [netcdff]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lhdf5_hl] ==> lib [hdf5_hl]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lhdf5] ==> lib [hdf5]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lhdf5hl_fortran] ==> lib [hdf5hl_fortran]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lhdf5_fortran] ==> lib [hdf5_fortran]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82_mpi] ==> lib [sci_gnu_82_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82] ==> lib [sci_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lmpifort_gnu_91] ==> lib [mpifort_gnu_91]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpi_gnu_91] ==> lib [mpi_gnu_91]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-ldsmml] ==> lib [dsmml]
+    arg [--no-as-needed] ==> ignore
+    arg [-lxpmem] ==> lib [xpmem]
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o] ==> obj [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o]
+    arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+  collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib] ==> [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib]
+  collapse library dir [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib] ==> [/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib]
+  collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+  collapse library dir [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib] ==> [/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib]
+  collapse library dir [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib] ==> [/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib]
+  collapse library dir [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib] ==> [/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib]
+  collapse library dir [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64] ==> [/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64]
+  collapse library dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0]
+  collapse library dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../../../lib64] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/../../..] ==> [/opt/cray/pe/gcc/12.2.0/snos/lib]
+  implicit libs: [pnetcdf;mpichf90;netcdf;netcdff;hdf5_hl;hdf5;hdf5hl_fortran;hdf5_fortran;sci_gnu_82_mpi;sci_gnu_82;dl;mpifort_gnu_91;mpi_gnu_91;dsmml;xpmem;gfortran;quadmath;pthread;gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtbegin.o;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/opt/cray/pe/libsci/23.02.1.1/GNU/9.1/x86_64/lib;/opt/cray/pe/mpich/8.1.25/ofi/gnu/9.1/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/opt/cray/pe/parallel-netcdf/1.12.3.3/gnu/9.1/lib;/opt/cray/pe/netcdf/4.9.0.3/gnu/9.1/lib;/opt/cray/pe/hdf5/1.12.2.3/gnu/9.1/lib;/opt/cray/xpmem/2.5.2-2.4_3.20__gd0f7936.shasta/lib64;/opt/cray/pe/gcc/12.2.0/snos/lib/gcc/x86_64-suse-linux/12.2.0;/opt/cray/pe/gcc/12.2.0/snos/lib64;/lib64;/usr/lib64;/opt/cray/pe/gcc/12.2.0/snos/lib]
+  implicit fwks: []
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d4637/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4637.dir/build.make CMakeFiles/cmTC_d4637.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_d4637.dir/testFortranCompilerF90.f90.o
+/opt/cray/pe/craype/2.7.20/bin/ftn    -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_d4637.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTC_d4637
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4637.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/ftn CMakeFiles/cmTC_d4637.dir/testFortranCompilerF90.f90.o -o cmTC_d4637 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function nc_set_log_level exists passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93aa6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93aa6.dir/build.make CMakeFiles/cmTC_93aa6.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93aa6.dir/CheckFunctionExists.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -DCHECK_FUNCTION_EXISTS=nc_set_log_level -o CMakeFiles/cmTC_93aa6.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_93aa6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93aa6.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -DCHECK_FUNCTION_EXISTS=nc_set_log_level CMakeFiles/cmTC_93aa6.dir/CheckFunctionExists.c.o -o cmTC_93aa6  /opt/cray/pe/netcdf/4.9.0.3/GNU/9.1/lib/libnetcdf.so 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0b13c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0b13c.dir/build.make CMakeFiles/cmTC_0b13c.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b13c.dir/CheckIncludeFile.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -std=c99   -fPIE -o CMakeFiles/cmTC_0b13c.dir/CheckIncludeFile.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0b13c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b13c.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99   CMakeFiles/cmTC_0b13c.dir/CheckIncludeFile.c.o -o cmTC_0b13c 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a624/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a624.dir/build.make CMakeFiles/cmTC_6a624.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a624.dir/CheckIncludeFile.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -std=c99   -fPIE -o CMakeFiles/cmTC_6a624.dir/CheckIncludeFile.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6a624
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a624.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99   CMakeFiles/cmTC_6a624.dir/CheckIncludeFile.c.o -o cmTC_6a624 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_604c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_604c2.dir/build.make CMakeFiles/cmTC_604c2.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_604c2.dir/CheckIncludeFile.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -std=c99   -fPIE -o CMakeFiles/cmTC_604c2.dir/CheckIncludeFile.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_604c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_604c2.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99   CMakeFiles/cmTC_604c2.dir/CheckIncludeFile.c.o -o cmTC_604c2 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_60c25/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_60c25.dir/build.make CMakeFiles/cmTC_60c25.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60c25.dir/SIZEOF_SIZE_T.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -std=c99   -fPIE -o CMakeFiles/cmTC_60c25.dir/SIZEOF_SIZE_T.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_60c25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c25.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99   CMakeFiles/cmTC_60c25.dir/SIZEOF_SIZE_T.c.o -o cmTC_60c25  /opt/cray/pe/parallel-netcdf/1.12.3.3/GNU/9.1/lib/libpnetcdf.so 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_79e03/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79e03.dir/build.make CMakeFiles/cmTC_79e03.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79e03.dir/SIZEOF_LONG_LONG.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc   -std=c99   -fPIE -o CMakeFiles/cmTC_79e03.dir/SIZEOF_LONG_LONG.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_79e03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79e03.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc  -std=c99   CMakeFiles/cmTC_79e03.dir/SIZEOF_LONG_LONG.c.o -o cmTC_79e03  /opt/cray/pe/parallel-netcdf/1.12.3.3/GNU/9.1/lib/libpnetcdf.so 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_NETCDF4 succeeded with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_904f0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_904f0.dir/build.make CMakeFiles/cmTC_904f0.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_904f0.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_NETCDF4   -o CMakeFiles/cmTC_904f0.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_904f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_904f0.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc CMakeFiles/cmTC_904f0.dir/src.c.o -o cmTC_904f0  /opt/cray/pe/netcdf/4.9.0.3/GNU/9.1/lib/libnetcdf.so 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_NC4
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HDF5_HAS_PAR_FILTERS succeeded with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a0dce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a0dce.dir/build.make CMakeFiles/cmTC_a0dce.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0dce.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHDF5_HAS_PAR_FILTERS   -o CMakeFiles/cmTC_a0dce.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a0dce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0dce.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.20/bin/cc CMakeFiles/cmTC_a0dce.dir/src.c.o -o cmTC_a0dce  /opt/cray/pe/netcdf/4.9.0.3/GNU/9.1/lib/libnetcdf.so 
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_PAR_FILTERS
+      choke me
+#endif
+int main() {return 0;}

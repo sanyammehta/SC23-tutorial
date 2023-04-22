@@ -1,0 +1,117 @@
+Performing C SOURCE FILE Test HAVE_NETCDF_PAR failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2d42b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2d42b.dir/build.make CMakeFiles/cmTC_2d42b.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d42b.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_NETCDF_PAR   -o CMakeFiles/cmTC_2d42b.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'choke'
+    4 |       choke me
+      |       ^~~~~
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:15: error: expected ';' before 'int'
+    4 |       choke me
+      |               ^
+      |               ;
+    5 | #endif
+    6 | int main() {return 0;}
+      | ~~~            
+gmake[1]: *** [CMakeFiles/cmTC_2d42b.dir/build.make:78: CMakeFiles/cmTC_2d42b.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2d42b/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_PARALLEL
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_SZIP_WRITE failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c93b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c93b0.dir/build.make CMakeFiles/cmTC_c93b0.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c93b0.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_SZIP_WRITE   -o CMakeFiles/cmTC_c93b0.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'choke'
+    4 |       choke me
+      |       ^~~~~
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:15: error: expected ';' before 'int'
+    4 |       choke me
+      |               ^
+      |               ;
+    5 | #endif
+    6 | int main() {return 0;}
+      | ~~~            
+gmake[1]: *** [CMakeFiles/cmTC_c93b0.dir/build.make:78: CMakeFiles/cmTC_c93b0.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c93b0/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if !NC_HAS_SZIP_WRITE
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_472 failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ddc9c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ddc9c.dir/build.make CMakeFiles/cmTC_ddc9c.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ddc9c.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_472   -o CMakeFiles/cmTC_ddc9c.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:5:7: error: unknown type name 'choke'
+    5 |       choke me
+      |       ^~~~~
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:5:15: error: expected ';' before 'int'
+    5 |       choke me
+      |               ^
+      |               ;
+    6 | #endif
+    7 | int main() {return 0;}
+      | ~~~            
+gmake[1]: *** [CMakeFiles/cmTC_ddc9c.dir/build.make:78: CMakeFiles/cmTC_ddc9c.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ddc9c/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if NC_VERSION_MAJOR == 4 && NC_VERSION_MINOR == 7 && NC_VERSION_PATCH == 2
+#else
+      choke me
+#endif
+int main() {return 0;}
+Performing C SOURCE FILE Test HAVE_DISPATCH2 failed with the following output:
+Change Dir: /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4e61f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e61f.dir/build.make CMakeFiles/cmTC_4e61f.dir/build
+gmake[1]: Entering directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e61f.dir/src.c.o
+/opt/cray/pe/craype/2.7.20/bin/cc -DHAVE_DISPATCH2   -o CMakeFiles/cmTC_4e61f.dir/src.c.o -c /lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'choke'
+    4 |       choke me
+      |       ^~~~~
+/lus/scratch/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp/src.c:4:15: error: expected ';' before 'int'
+    4 |       choke me
+      |               ^
+      |               ;
+    5 | #endif
+    6 | int main() {return 0;}
+      | ~~~            
+gmake[1]: *** [CMakeFiles/cmTC_4e61f.dir/build.make:78: CMakeFiles/cmTC_4e61f.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/lus/bnchlu1/smehta/MPAS/PIO-gnu/ParallelIO/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4e61f/fast] Error 2
+
+
+Source file was:
+
+#include <netcdf_meta.h>
+#if NC_DISPATCH_VERSION != 2
+      choke me
+#endif
+int main() {return 0;}

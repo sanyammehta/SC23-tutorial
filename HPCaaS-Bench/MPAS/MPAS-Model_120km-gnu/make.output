@@ -1,0 +1,613 @@
+( make all \
+"FC_PARALLEL = ftn" \
+"CC_PARALLEL = cc" \
+"CXX_PARALLEL = CC" \
+"FC_SERIAL = ftn" \
+"CC_SERIAL = cc" \
+"CXX_SERIAL = CC" \
+"FFLAGS_PROMOTION = -real-size 64" \
+"FFLAGS_OPT = -O3 -convert big_endian -FR" \
+"CFLAGS_OPT = -O3" \
+"CXXFLAGS_OPT = -O3" \
+"LDFLAGS_OPT = -O3" \
+"FFLAGS_OMP = -qopenmp" \
+"CFLAGS_OMP = -qopenmp" \
+"FFLAGS_DEBUG = -real-size 64 -g -convert big_endian -FR -CU -CB -check all -gen-interfaces -warn interfaces -traceback" \
+"CFLAGS_DEBUG = -g -traceback" \
+"CXXFLAGS_DEBUG = -g -traceback" \
+"LDFLAGS_DEBUG = -g -traceback" \
+"CORE = atmosphere" \
+"DEBUG = " \
+"USE_PAPI = " \
+"OPENMP = " \
+"CPPFLAGS =  -D_MPI -DUNDERSCORE" )
+make[1]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3'
+cd src; make FC="ftn" \
+                 CC="cc" \
+                 CXX="CC" \
+                 SFC="ftn" \
+                 SCC="cc" \
+                 LINKER="ftn" \
+                 CFLAGS="-O3 "-DSINGLE_PRECISION"" \
+                 CXXFLAGS="-O3 "-DSINGLE_PRECISION"" \
+                 FFLAGS="-O3 -convert big_endian -FR" \
+                 LDFLAGS="-O3" \
+                 RM="rm -f" \
+                 CPP="cpp -P -traditional" \
+                 CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model "-DSINGLE_PRECISION" -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" \
+                 LIBS="-L/lus/scratch/anberu/PIO/PIO/lib -lpiof -lpioc -L/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/lib -lpnetcdf -L/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/lib -lnetcdff -lnetcdf" \
+                 CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" \
+                 FCINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" \
+                 CORE="atmosphere"\
+                 AUTOCLEAN="false" \
+                 GEN_F90="false" \
+                 NAMELIST_SUFFIX="atmosphere" \
+                 EXE_NAME="atmosphere_model"
+make[2]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src'
+( cd external; make FC="ftn" SFC="ftn" CC="cc" SCC="cc" FFLAGS="-O3 -convert big_endian -FR" CFLAGS="-O3 -DSINGLE_PRECISION" CPP="cpp -P -traditional" NETCDF="/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0" CORE="atmosphere" all )
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external'
+( cd esmf_time_f90; make FC="ftn -O3 -convert big_endian -FR" CPP="cpp -P -traditional" CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI" GEN_F90=false )
+( cd ezxml; make )
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/esmf_time_f90'
+rm -f ESMF_BaseMod.o ESMF_BaseMod.mod
+rm -f ESMF_FractionMod.o ESMF_FractionMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_BaseMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_FractionMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+rm -f wrf_error_fatal.o wrf_error_fatal.mod
+rm -f wrf_message.o wrf_message.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c wrf_error_fatal.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c wrf_message.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+rm -f *.o *.i
+make -j 1 library
+make[5]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[5]: warning: -jN forced in submake: disabling jobserver mode.
+cc -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -c ezxml.c
+ESMF_BaseMod.F90(672): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [TYPE]
+      subroutine ESMF_AttributeGetbyNumber(anytype, number, name, type, value, rc)
+------------------------------------------------------------------^
+ESMF_BaseMod.F90(623): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [TYPE]
+      subroutine ESMF_AttributeGet(anytype, name, type, value, rc)
+--------------------------------------------------^
+ESMF_BaseMod.F90(699): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [NAMELIST]
+      subroutine ESMF_AttributeGetNameList(anytype, count, namelist, rc)
+-----------------------------------------------------------^
+ESMF_BaseMod.F90(672): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [VALUE]
+      subroutine ESMF_AttributeGetbyNumber(anytype, number, name, type, value, rc)
+------------------------------------------------------------------------^
+ESMF_BaseMod.F90(623): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [VALUE]
+      subroutine ESMF_AttributeGet(anytype, name, type, value, rc)
+--------------------------------------------------------^
+ESMF_BaseMod.F90(699): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [COUNT]
+      subroutine ESMF_AttributeGetNameList(anytype, count, namelist, rc)
+----------------------------------------------------^
+ESMF_BaseMod.F90(648): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [COUNT]
+      subroutine ESMF_AttributeGetCount(anytype, count, rc)
+-------------------------------------------------^
+ESMF_BaseMod.F90(802): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [VALUELIST]
+      subroutine ESMF_AttributeGetObjectList(anytypelist, name, typelist, valuelist, rc)
+--------------------------------------------------------------------------^
+ESMF_BaseMod.F90(750): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [VALUELIST]
+      subroutine ESMF_AttributeGetList(anytype, namelist, typelist, valuelist, rc)
+--------------------------------------------------------------------^
+ESMF_BaseMod.F90(802): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [TYPELIST]
+      subroutine ESMF_AttributeGetObjectList(anytypelist, name, typelist, valuelist, rc)
+----------------------------------------------------------------^
+ESMF_BaseMod.F90(750): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [TYPELIST]
+      subroutine ESMF_AttributeGetList(anytype, namelist, typelist, valuelist, rc)
+----------------------------------------------------------^
+rm -f ESMF_BaseTimeMod.o ESMF_BaseTimeMod.mod
+rm -f MeatMod.o MeatMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_BaseTimeMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c MeatMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+rm -f ESMF_CalendarMod.o ESMF_CalendarMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_CalendarMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+rm -f ESMF_ShrTimeMod.o ESMF_ShrTimeMod.mod
+rm -f ESMF_Stubs.o ESMF_Stubs.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_ShrTimeMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_Stubs.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+rm -f ESMF_TimeIntervalMod.o ESMF_TimeIntervalMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_TimeIntervalMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+rm -f ESMF_TimeMod.o ESMF_TimeMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_TimeMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+make[5]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+rm -f ESMF_AlarmMod.o ESMF_AlarmMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_AlarmMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ESMF_AlarmMod.F90(906): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [ID]
+                            Enabled, ID, rc)
+-------------------------------------^
+ESMF_AlarmMod.F90(905): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [RINGING]
+                            PrevRingTime, StopTime, Ringing, &
+----------------------------------------------------^
+ESMF_AlarmMod.F90(906): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [ENABLED]
+                            Enabled, ID, rc)
+----------------------------^
+rm -f ESMF_ClockMod.o ESMF_ClockMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_ClockMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ESMF_ClockMod.F90(1119): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [ADVANCECOUNT]
+                            RefTime, CurrTime, PrevTime, AdvanceCount, &
+---------------------------------------------------------^
+rm -f ESMF_AlarmClockMod.o ESMF_AlarmClockMod.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF_AlarmClockMod.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+rm -f ESMF.o ESMF.mod
+ftn -O3 -convert big_endian -FR -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DHIDE_MPI -O3 -convert big_endian -FR -c ESMF.F90 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.
+ar -ru libesmf_time.a *.o
+ar: creating libesmf_time.a
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/esmf_time_f90'
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external'
+( cd framework; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" all ) 
+(cd tools; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CC="cc" CFLAGS="-O3 -DSINGLE_PRECISION")
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/framework'
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools'
+( make build_registry CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CC="cc" CFLAGS="-O3 -DSINGLE_PRECISION" )
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools'
+*** Building MPAS tools from source ***
+(cd registry; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CC="cc" CFLAGS="-O3 -DSINGLE_PRECISION")
+rm -f mpas_kind_types.o mpas_kind_types.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_kind_types.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_c_interfacing.o mpas_c_interfacing.mod
+make[5]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/registry'
+(cd ../../external/ezxml; make CFLAGS="-O3 -DSINGLE_PRECISION ")
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_c_interfacing.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+cc -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/ezxml -c regex_matching.c
+cc -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/ezxml -c random_id.c
+cc -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/ezxml -c pool_hash.c
+cc -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/ezxml -c xml_stream_parser.c
+make[6]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+rm -f *.o *.i
+make -j 1 library
+make[7]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[7]: warning: -jN forced in submake: disabling jobserver mode.
+cc -O3 -DSINGLE_PRECISION  -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -c ezxml.c
+rm -f mpas_constants.o mpas_constants.mod
+rm -f mpas_io_units.o mpas_io_units.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_constants.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_io_units.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_threading.o mpas_threading.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_threading.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+xml_stream_parser.c(1732): warning #266: function "stream_mgr_add_field_c" declared implicitly
+  					stream_mgr_add_field_c(manager, streamID, (const char *)fieldname, packages_local, &err);
+  					^
+
+xml_stream_parser.c(1757): warning #266: function "stream_mgr_add_field_c" declared implicitly
+  			stream_mgr_add_field_c(manager, streamID, fieldname_const, packages_local, &err);
+  			^
+
+xml_stream_parser.c(1773): warning #266: function "stream_mgr_add_field_c" declared implicitly
+  			stream_mgr_add_field_c(manager, streamID, fieldname_const, packages_local, &err);
+  			^
+
+xml_stream_parser.c(1788): warning #266: function "stream_mgr_add_pool_c" declared implicitly
+  			stream_mgr_add_pool_c(manager, streamID, structname_const, packages_local, &err);
+  			^
+
+xml_stream_parser.c(1808): warning #266: function "stream_mgr_add_immutable_stream_fields_c" declared implicitly
+  			stream_mgr_add_immutable_stream_fields_c(manager, streamID, streamname_const, packages_local, &err);
+  			^
+
+xml_stream_parser.c(1820): warning #266: function "stream_mgr_add_field_c" declared implicitly
+  							stream_mgr_add_field_c(manager, streamID, fieldname_const, packages_local, &err);
+  							^
+
+xml_stream_parser.c(1830): warning #266: function "stream_mgr_add_field_c" declared implicitly
+  							stream_mgr_add_field_c(manager, streamID, fieldname_const, packages_local, &err);
+  							^
+
+xml_stream_parser.c(1839): warning #266: function "stream_mgr_add_pool_c" declared implicitly
+  							stream_mgr_add_pool_c(manager, streamID, structname_const, packages_local, &err);
+  							^
+
+rm -f mpas_derived_types.o mpas_derived_types.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_derived_types.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_abort.o mpas_abort.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_abort.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_log.o mpas_log.mod
+rm -f mpas_hash.o mpas_hash.mod
+rm -f mpas_attlist.o mpas_attlist.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_log.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_hash.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_attlist.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_field_routines.o mpas_field_routines.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_field_routines.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_sort.o mpas_sort.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_sort.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+make[7]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[6]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+#(make ezxml CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include")
+(make parse CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include")
+make[6]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/registry'
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c parse.c
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c dictionary.c
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c gen_inc.c
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c fortprintf.c
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c utility.c
+parse.c(758): warning #266: function "generate_immutable_streams" declared implicitly
+  	err = generate_immutable_streams(registry);
+  	      ^
+
+cc -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -DSINGLE_PRECISION ../../external/ezxml/ezxml.o  -I../../external/ezxml -o parse parse.o dictionary.o gen_inc.o fortprintf.o utility.o
+rm -f mpas_pool_routines.o mpas_pool_routines.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_pool_routines.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+make[6]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/registry'
+make[5]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/registry'
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools'
+( make build_input_gen CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CC="cc" CFLAGS="-O3 -DSINGLE_PRECISION" )
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools'
+*** Building MPAS tools from source ***
+(cd input_gen; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CC="cc" CFLAGS="-O3 -DSINGLE_PRECISION")
+make[5]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen'
+(cd ../../external/ezxml; make CFLAGS="-O3 -DSINGLE_PRECISION ")
+make[6]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+rm -f *.o *.i
+make -j 1 library
+make[7]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[7]: warning: -jN forced in submake: disabling jobserver mode.
+cc -O3 -DSINGLE_PRECISION  -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -c ezxml.c
+make[7]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[6]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+(make -j 1 namelist_gen CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include")
+make[6]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen'
+make[6]: warning: -jN forced in submake: disabling jobserver mode.
+(cd ../../external/ezxml; make CFLAGS="-O3 -DSINGLE_PRECISION ")
+make[7]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+rm -f *.o *.i
+make -j 1 library
+make[8]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+cc -O3 -DSINGLE_PRECISION  -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -c ezxml.c
+make[8]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[7]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c namelist_gen.c
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c test_functions.c
+cc -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -DSINGLE_PRECISION -I../../external/ezxml -o namelist_gen namelist_gen.o test_functions.o ../../external/ezxml/ezxml.o
+make[6]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen'
+(make -j 1 streams_gen CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include")
+make[6]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen'
+make[6]: warning: -jN forced in submake: disabling jobserver mode.
+(cd ../../external/ezxml; make CFLAGS="-O3 -DSINGLE_PRECISION ")
+make[7]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+rm -f *.o *.i
+make -j 1 library
+make[8]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+cc -O3 -DSINGLE_PRECISION  -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -c ezxml.c
+rm -f mpas_dmpar.o mpas_dmpar.mod
+rm -f mpas_field_accessor.o mpas_field_accessor.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_dmpar.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_field_accessor.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+make[8]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+make[7]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/external/ezxml'
+cc  -O3 -DSINGLE_PRECISION -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -I../../external/ezxml -c streams_gen.c
+mpas_field_accessor.F(253): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [MISSINGVALUE]
+    subroutine mpas_field_access_msgval_logical(fieldPool, fieldName, missingValue)
+----------------------------------------------------------------------^
+cc -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -DSINGLE_PRECISION -I../../external/ezxml -o streams_gen streams_gen.o test_functions.o ../../external/ezxml/ezxml.o
+make[6]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen'
+make[5]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen'
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools'
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools'
+rm -f mpas_io.o mpas_io.mod
+rm -f mpas_domain_routines.o mpas_domain_routines.mod
+rm -f mpas_timer.o mpas_timer.mod
+rm -f mpas_block_decomp.o mpas_block_decomp.mod
+rm -f mpas_timekeeping.o mpas_timekeeping.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_io.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_domain_routines.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_timer.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_block_decomp.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_timekeeping.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_io_streams.o mpas_io_streams.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_io_streams.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_stream_list.o mpas_stream_list.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_stream_list.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_stream_manager.o mpas_stream_manager.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_stream_manager.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_framework.o mpas_framework.mod
+rm -f mpas_decomp.o mpas_decomp.mod
+rm -f mpas_forcing.o mpas_forcing.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_framework.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_forcing.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_decomp.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_block_creator.o mpas_block_creator.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_block_creator.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+rm -f mpas_bootstrapping.o mpas_bootstrapping.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_bootstrapping.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../external/esmf_time_f90
+ar -ru libframework.a mpas_kind_types.o mpas_framework.o mpas_timer.o mpas_timekeeping.o mpas_constants.o mpas_attlist.o mpas_hash.o mpas_sort.o mpas_block_decomp.o mpas_block_creator.o mpas_dmpar.o mpas_abort.o mpas_decomp.o mpas_threading.o mpas_io.o mpas_io_streams.o mpas_bootstrapping.o mpas_io_units.o mpas_stream_manager.o mpas_stream_list.o mpas_forcing.o mpas_c_interfacing.o random_id.o pool_hash.o mpas_derived_types.o mpas_domain_routines.o mpas_field_routines.o mpas_pool_routines.o xml_stream_parser.o regex_matching.o mpas_field_accessor.o mpas_log.o ../external/ezxml/ezxml.o
+ar: creating libframework.a
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/framework'
+ln -sf framework/libframework.a libframework.a
+( cd operators; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" all ) 
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/operators'
+rm -f mpas_vector_operations.o mpas_vector_operations.mod
+rm -f mpas_matrix_operations.o mpas_matrix_operations.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_vector_operations.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_matrix_operations.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+rm -f mpas_spline_interpolation.o mpas_spline_interpolation.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_spline_interpolation.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+rm -f mpas_tensor_operations.o mpas_tensor_operations.mod
+rm -f mpas_rbf_interpolation.o mpas_rbf_interpolation.mod
+rm -f mpas_geometry_utils.o mpas_geometry_utils.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_tensor_operations.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_rbf_interpolation.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_geometry_utils.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+rm -f mpas_tracer_advection_helpers.o mpas_tracer_advection_helpers.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_tracer_advection_helpers.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+rm -f mpas_vector_reconstruction.o mpas_vector_reconstruction.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_vector_reconstruction.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+rm -f mpas_tracer_advection_mono.o mpas_tracer_advection_mono.mod
+rm -f mpas_tracer_advection_std.o mpas_tracer_advection_std.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_tracer_advection_mono.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_tracer_advection_std.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../external/esmf_time_f90
+ar -ru libops.a mpas_vector_operations.o mpas_matrix_operations.o mpas_tensor_operations.o mpas_rbf_interpolation.o mpas_vector_reconstruction.o mpas_spline_interpolation.o mpas_tracer_advection_helpers.o mpas_tracer_advection_mono.o mpas_tracer_advection_std.o mpas_geometry_utils.o
+ar: creating libops.a
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/operators'
+ln -sf operators/libops.a libops.a
+( cd core_atmosphere; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" REG_PARSE="/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/registry/parse" gen_includes )
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+cpp -P -traditional -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include Registry.xml > Registry_processed.xml
+(if [ ! -d inc ]; then mkdir -p inc; fi) # To generate *.inc files
+(cd inc; /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/registry/parse < ../Registry_processed.xml )
+Reading registry file from standard input
+---- GENERATING IMMUTABLE STREAMS ----
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+( cd core_atmosphere; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" NL_GEN="/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen/namelist_gen" ST_GEN="/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen/streams_gen" core_input_gen )
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+if [ ! -e default_inputs ]; then  mkdir default_inputs; fi
+( cd default_inputs; /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen/namelist_gen ../Registry_processed.xml namelist.atmosphere in_defaults=true )
+( cd default_inputs; /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/tools/input_gen/streams_gen ../Registry_processed.xml streams.atmosphere stream_list.atmosphere. listed )
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+( cd core_atmosphere; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" all ) 
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+rm -f mpas_atm_dimensions.o mpas_atm_dimensions.mod
+rm -f mpas_atm_threading.o mpas_atm_threading.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DDO_PHYSICS -O3 -convert big_endian -FR -c mpas_atm_dimensions.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../operators -I./physics -I./dynamics -I./diagnostics -I./physics/physics_wrf -I../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DDO_PHYSICS -O3 -convert big_endian -FR -c mpas_atm_threading.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../operators -I./physics -I./dynamics -I./diagnostics -I./physics/physics_wrf -I../external/esmf_time_f90
+( cd physics; make all )
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/physics'
+./checkout_data_files.sh
+rm -f mpas_atmphys_constants.o mpas_atmphys_constants.mod
+rm -f mpas_atmphys_date_time.o mpas_atmphys_date_time.mod
+rm -f mpas_atmphys_functions.o mpas_atmphys_functions.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_constants.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_date_time.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_utilities.o mpas_atmphys_utilities.mod
+(cd physics_wrf; make all COREDEF="-Dmpas")
+*** No compatible version of WRF physics tables found; downloading the latest tables ***
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_functions.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_utilities.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+/usr/bin/git
+*** trying git to obtain WRF physics tables ***
+Cloning into 'MPAS-Data'...
+make[5]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/physics/physics_wrf'
+echo "****** compiling physics_wrf ******"
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c libmassv.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+****** compiling physics_wrf ******
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_bl_gwdo.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cam_error_function.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_bl_ysu.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cam_shr_kind_mod.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cu_gf.mpas.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ar -ru libphys.a mpas_atmphys_constants.o mpas_atmphys_date_time.o mpas_atmphys_functions.o mpas_atmphys_utilities.o
+ar: creating libphys.a
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cu_tiedtke.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cu_ntiedtke.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cu_kfeta.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+module_cu_gf.mpas.F(4151): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [PRE]
+              TN,QO,PO,PRE,P,OUTT,OUTQ,DTIME,ktau,PSUR,US,VS,    &
+-----------------------^
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_mp_kessler.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_mp_radar.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_mp_thompson_cldfra3.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_mp_wsm6.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_ra_cam_support.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_ra_rrtmg_vinterp.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_bem.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_urban.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_sfcdiags.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_sfclay.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_noahlsm.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_oml.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_bl_mynn.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_cam_support.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_mp_thompson.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_ra_rrtmg_lw.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_ra_cam.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+module_ra_cam.F(7485): warning #7532: The number of arguments is incompatible with intrinsic procedure, assume 'external'.   [GAMMA]
+   gamma(w,uu,g,e) = .50_r8*w*((3._r8*g*(1._r8-w)*uu*uu + 1._r8)/(1._r8-e*e*uu*uu))
+---^
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_bep.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_bep_bem.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_mynn.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_sf_noahdrv.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas -O3 -convert big_endian -FR -c module_ra_rrtmg_sw.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../../framework -I../../../external/esmf_time_f90
+ar -ru ./../libphys.a libmassv.o module_bl_gwdo.o module_bl_mynn.o module_bl_ysu.o module_cam_error_function.o module_cam_shr_kind_mod.o module_cam_support.o module_cu_gf.mpas.o module_cu_tiedtke.o module_cu_ntiedtke.o module_cu_kfeta.o module_mp_kessler.o module_mp_radar.o module_mp_thompson.o module_mp_thompson_cldfra3.o module_mp_wsm6.o module_ra_cam.o module_ra_cam_support.o module_ra_rrtmg_lw.o module_ra_rrtmg_sw.o module_ra_rrtmg_vinterp.o module_sf_bem.o module_sf_bep.o module_sf_bep_bem.o module_sf_sfcdiags.o module_sf_mynn.o module_sf_noahdrv.o module_sf_noahlsm.o module_sf_oml.o module_sf_sfclay.o module_sf_urban.o
+make[5]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/physics/physics_wrf'
+(make phys_interface COREDEF="-Dmpas")
+make[5]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/physics'
+rm -f mpas_atmphys_camrad_init.o mpas_atmphys_camrad_init.mod
+rm -f mpas_atmphys_vars.o mpas_atmphys_vars.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_camrad_init.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_vars.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_lsm_noahinit.o mpas_atmphys_lsm_noahinit.mod
+rm -f mpas_atmphys_o3climatology.o mpas_atmphys_o3climatology.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_lsm_noahinit.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_rrtmg_swinit.o mpas_atmphys_rrtmg_swinit.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_o3climatology.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_rrtmg_lwinit.o mpas_atmphys_rrtmg_lwinit.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_rrtmg_swinit.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_rrtmg_lwinit.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_init_microphysics.o mpas_atmphys_init_microphysics.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_init_microphysics.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_finalize.o mpas_atmphys_finalize.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_finalize.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_packages.o mpas_atmphys_packages.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_packages.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_todynamics.o mpas_atmphys_todynamics.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_todynamics.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_control.o mpas_atmphys_control.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_control.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_cloudiness.o mpas_atmphys_driver_cloudiness.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_cloudiness.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_convection.o mpas_atmphys_driver_convection.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_convection.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_gwdo.o mpas_atmphys_driver_gwdo.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_gwdo.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_landuse.o mpas_atmphys_landuse.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_landuse.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_pbl.o mpas_atmphys_driver_pbl.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_pbl.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_sfclayer.o mpas_atmphys_driver_sfclayer.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_sfclayer.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_oml.o mpas_atmphys_driver_oml.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_oml.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_interface.o mpas_atmphys_interface.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_interface.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_lsm.o mpas_atmphys_driver_lsm.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_lsm.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_update_surface.o mpas_atmphys_update_surface.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_update_surface.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_manager.o mpas_atmphys_manager.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_manager.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_update.o mpas_atmphys_update.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_update.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_radiation_sw.o mpas_atmphys_driver_radiation_sw.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_radiation_sw.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_microphysics.o mpas_atmphys_driver_microphysics.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_microphysics.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver_radiation_lw.o mpas_atmphys_driver_radiation_lw.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver_radiation_lw.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+rm -f mpas_atmphys_driver.o mpas_atmphys_driver.mod
+rm -f mpas_atmphys_init.o mpas_atmphys_init.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_driver.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -Dmpas  -O3 -convert big_endian -FR -c mpas_atmphys_init.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I./physics_wrf -I.. -I../../framework -I../../external/esmf_time_f90
+make[5]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/physics'
+ar -ru libphys.a mpas_atmphys_camrad_init.o mpas_atmphys_control.o mpas_atmphys_driver.o mpas_atmphys_driver_cloudiness.o mpas_atmphys_driver_convection.o mpas_atmphys_driver_gwdo.o mpas_atmphys_driver_lsm.o mpas_atmphys_driver_microphysics.o mpas_atmphys_driver_oml.o mpas_atmphys_driver_pbl.o mpas_atmphys_driver_radiation_lw.o mpas_atmphys_driver_radiation_sw.o mpas_atmphys_driver_sfclayer.o mpas_atmphys_finalize.o mpas_atmphys_init.o mpas_atmphys_init_microphysics.o mpas_atmphys_interface.o mpas_atmphys_landuse.o mpas_atmphys_lsm_noahinit.o mpas_atmphys_manager.o mpas_atmphys_o3climatology.o mpas_atmphys_packages.o mpas_atmphys_rrtmg_lwinit.o mpas_atmphys_rrtmg_swinit.o mpas_atmphys_todynamics.o mpas_atmphys_update_surface.o mpas_atmphys_update.o mpas_atmphys_vars.o
+fatal: unable to connect to github.com:
+github.com[0: 140.82.113.4]: errno=Connection timed out
+
+*** failed to obtain WRF physics tables using git ***
+/usr/bin/svn
+*** trying svn to obtain WRF physics tables ***
+A    MPAS-Data.git/branches
+A    MPAS-Data.git/tags
+A    MPAS-Data.git/tags/v7.0
+A    MPAS-Data.git/tags/v7.0/README.md
+A    MPAS-Data.git/tags/v7.0/atmosphere
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/CAM_ABS_DATA.DBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/CAM_AEROPT_DATA.DBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/COMPATIBILITY
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/GENPARM.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/LANDUSE.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/OZONE_DAT.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/OZONE_LAT.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/OZONE_PLEV.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/RRTMG_LW_DATA
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/RRTMG_LW_DATA.DBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/RRTMG_SW_DATA
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/RRTMG_SW_DATA.DBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/SOILPARM.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/VEGPARM.TBL
+A    MPAS-Data.git/tags/v7.0/atmosphere/physics_wrf/files/VERSION
+A    MPAS-Data.git/trunk
+A    MPAS-Data.git/trunk/README.md
+A    MPAS-Data.git/trunk/atmosphere
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/CAM_ABS_DATA.DBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/CAM_AEROPT_DATA.DBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/COMPATIBILITY
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/GENPARM.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/LANDUSE.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/OZONE_DAT.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/OZONE_LAT.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/OZONE_PLEV.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/RRTMG_LW_DATA
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/RRTMG_LW_DATA.DBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/RRTMG_SW_DATA
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/RRTMG_SW_DATA.DBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/SOILPARM.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/VEGPARM.TBL
+A    MPAS-Data.git/trunk/atmosphere/physics_wrf/files/VERSION
+Checked out revision 6.
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/physics'
+( mkdir libphys; cd libphys; ar -x ../physics/libphys.a )
+( cd ../..; ln -sf ./src/core_atmosphere/physics/physics_wrf/files/*TBL .)
+( cd ../..; ln -sf ./src/core_atmosphere/physics/physics_wrf/files/*DATA* .)
+( cd dynamics; make all PHYSICS="-DDO_PHYSICS" )
+( cd utils; make all )
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/utils'
+rm -f atmphys_build_tables_thompson.o atmphys_build_tables_thompson.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c atmphys_build_tables_thompson.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/dynamics'
+rm -f mpas_atm_iau.o mpas_atm_iau.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DDO_PHYSICS -O3 -convert big_endian -FR -c mpas_atm_iau.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../framework -I../../operators -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+rm -f build_tables.o build_tables.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c build_tables.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+ftn -O3 -o build_tables build_tables.o atmphys_build_tables_thompson.o -L../../framework -L../physics -lphys -lframework -L/lus/scratch/anberu/PIO/PIO/lib -lpiof -lpioc -L/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/lib -lpnetcdf -L/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/lib -lnetcdff -lnetcdf -L../../external/esmf_time_f90 -lesmf_time
+rm -f mpas_atm_time_integration.o mpas_atm_time_integration.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DDO_PHYSICS -O3 -convert big_endian -FR -c mpas_atm_time_integration.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I.. -I../../framework -I../../operators -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+mv build_tables ../../..
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/utils'
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/dynamics'
+( cd diagnostics; make all )
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/diagnostics'
+rm -f mpas_atm_diagnostics_utils.o mpas_atm_diagnostics_utils.mod
+rm -f mpas_atm_diagnostic_template.o mpas_atm_diagnostic_template.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c mpas_atm_diagnostics_utils.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c mpas_atm_diagnostic_template.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+rm -f soundings.o soundings.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c soundings.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+rm -f isobaric_diagnostics.o isobaric_diagnostics.mod
+rm -f convective_diagnostics.o convective_diagnostics.mod
+rm -f pv_diagnostics.o pv_diagnostics.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c isobaric_diagnostics.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c pv_diagnostics.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c convective_diagnostics.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+rm -f mpas_atm_diagnostics_manager.o mpas_atm_diagnostics_manager.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3  -O3 -convert big_endian -FR -c mpas_atm_diagnostics_manager.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../../framework -I../../operators -I../dynamics -I../physics -I../physics/physics_wrf -I../../external/esmf_time_f90
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere/diagnostics'
+rm -f mpas_atm_core.o mpas_atm_core.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DDO_PHYSICS -O3 -convert big_endian -FR -c mpas_atm_core.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../operators -I./physics -I./dynamics -I./diagnostics -I./physics/physics_wrf -I../external/esmf_time_f90
+rm -f mpas_atm_core_interface.o mpas_atm_core_interface.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -DDO_PHYSICS -O3 -convert big_endian -FR -c mpas_atm_core_interface.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../operators -I./physics -I./dynamics -I./diagnostics -I./physics/physics_wrf -I../external/esmf_time_f90
+ar -ru libdycore.a mpas_atm_core.o mpas_atm_core_interface.o mpas_atm_dimensions.o mpas_atm_threading.o dynamics/*.o libphys/*.o diagnostics/*.o
+ar: creating libdycore.a
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+ln -sf core_atmosphere/libdycore.a libdycore.a
+( cd driver; make CPPFLAGS="-D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3" CPPINCLUDES="-DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include" all ) 
+make[3]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/driver'
+(make clean)
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/driver'
+rm -f *.o *.mod *.f90
+rm -f *.i
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/driver'
+(make driver)
+make[4]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/driver'
+rm -f mpas_subdriver.o mpas_subdriver.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas_subdriver.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../operators -I../core_atmosphere -I../external/esmf_time_f90
+rm -f mpas.o mpas.mod
+ftn -D_MPI -DUNDERSCORE -DCORE_ATMOSPHERE -DMPAS_NAMELIST_SUFFIX=atmosphere -DMPAS_EXE_NAME=atmosphere_model -DSINGLE_PRECISION -DMPAS_NATIVE_TIMERS -DMPAS_GIT_VERSION=v6.3 -O3 -convert big_endian -FR -c mpas.F -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -DUSE_PIO2 -I/lus/scratch/anberu/PIO/PIO/include -I/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/include -I/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/include -I../framework -I../operators -I../core_atmosphere -I../external/esmf_time_f90
+make[4]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/driver'
+make[3]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/driver'
+ftn -O3 -o atmosphere_model driver/*.o -L. -ldycore -lops -lframework -L/lus/scratch/anberu/PIO/PIO/lib -lpiof -lpioc -L/opt/cray/pe/parallel-netcdf/1.12.3.1/INTEL/19.0/lib -lpnetcdf -L/opt/cray/pe/netcdf/4.9.0.1/INTEL/19.0/lib -lnetcdff -lnetcdf -I./external/esmf_time_f90 -L./external/esmf_time_f90 -lesmf_time
+make[2]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src'
+if [ -e src/atmosphere_model ]; then mv src/atmosphere_model .; fi
+( cd src/core_atmosphere; make ROOT_DIR="/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3" post_build )
+make[2]: Entering directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+if [ ! -e /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/default_inputs ]; then mkdir /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/default_inputs; fi
+cp default_inputs/* /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/default_inputs/.
+( cd /lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/default_inputs; for FILE in `ls -1`; do if [ ! -e ../$FILE ]; then cp $FILE ../.; fi; done )
+make[2]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3/src/core_atmosphere'
+*******************************************************************************
+MPAS was built with default single-precision reals.
+Debugging is off.
+Parallel version is on.
+Papi libraries are off.
+TAU Hooks are off.
+MPAS was built without OpenMP support.
+MPAS was built with .F files.
+The native timer interface is being used
+Using the PIO 2 library.
+*******************************************************************************
+make[1]: Leaving directory '/lus/bnchlu1/anberu/MPAS/MPAS-Model_v6.3'
