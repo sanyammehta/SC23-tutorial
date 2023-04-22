@@ -1,0 +1,9 @@
+We only provide binaries here to keep the size of the repository small.
+There are two versions of binaries - one built and linked with cray-mpich in mpich/ and the other built and linked with openmpi-4.1.4 in ompi/
+Both versions were built with gnu compiler
+
+There are two scripts, mpich-script.sh and ompi-script.sh contained within each of the two directories, mpich/ and ompi/
+
+In order to run with different number of MPI ranks, we first use the starter_linux64_gf binary to decompose the problem over the desired number of ranks and then running the starter_linux64_gf binary with those number of ranks specified in the mpich/ompi-script.sh run script. We ran with multiple different ranks and used 4 threads in each case as noted in our scripts.
+
+For OpenRadioss, we did not make any source code changes, and used -O3 (default with the application) to build the application.
