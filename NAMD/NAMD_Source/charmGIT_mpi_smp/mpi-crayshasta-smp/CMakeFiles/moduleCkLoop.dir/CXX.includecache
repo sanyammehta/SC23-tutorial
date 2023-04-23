@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoop.C
+CkLoop.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoop.h
+unistd.h
+-
+pthread.h
+-
+qd.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/qd.h
+sys/syscall.h
+-
+CkLoop.def.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoop.def.h
+
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoop.h
+assert.h
+-
+converse.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/converse.h
+taskqueue.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/taskqueue.h
+charm++.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/charm++.h
+CkLoopAPI.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoopAPI.h
+atomic
+-
+
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoopAPI.h
+CkLoop.decl.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/ckloop/CkLoop.decl.h
+

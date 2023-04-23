@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/CMakeFiles/hwloc"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/CMakeFiles/hwloc.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/CMakeFiles/hwloc-complete.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-install.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-mkdir.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-download.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-update.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-patch.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-configure.rule"
+		},
+		{
+			"file" : "/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/hwloc-prefix/src/hwloc-stamp/hwloc-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"hwloc"
+		],
+		"name" : "hwloc"
+	}
+}
