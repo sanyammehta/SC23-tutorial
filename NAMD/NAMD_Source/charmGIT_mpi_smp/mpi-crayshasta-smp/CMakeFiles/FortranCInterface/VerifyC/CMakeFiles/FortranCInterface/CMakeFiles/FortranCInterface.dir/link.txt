@@ -1,1 +1,0 @@
-/opt/cray/pe/craype/2.7.19.2/bin/ftn    CMakeFiles/FortranCInterface.dir/main.F.o CMakeFiles/FortranCInterface.dir/call_sub.f.o CMakeFiles/FortranCInterface.dir/call_mod.f90.o  -o FortranCInterface   -L/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib  libsymbols.a libmyfort.a -latomic -lunwind -lunwind 

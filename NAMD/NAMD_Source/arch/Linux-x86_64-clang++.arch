@@ -1,7 +1,0 @@
-NAMD_ARCH = Linux-x86_64
-CHARMARCH = multicore-linux-x86_64-clang
-
-CXX = clang++ -m64 -O3 -std=c++11
-CXXOPTS = -ffast-math
-CC = clang -m64 -O3
-COPTS = -ffast-math

@@ -1,4 +1,0 @@
-# redefine for profiling
-CUDALIB+=-lnvToolsExt
-CUDAFLAGS+=-DNAMD_NVTX_ENABLED
-

@@ -1,4 +1,0 @@
-# Add flags and libraries for profiling
-CUDAFLAGS += -I$(ROCMDIR)/roctracer/include -DNAMD_ROCTX_ENABLED
-CUDALIB+=-L$(ROCMDIR)/roctracer/lib -lroctx64 -lroctracer64
-
