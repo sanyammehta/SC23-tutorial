@@ -1,0 +1,809 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       polyBoundaryMesh;
+    arch        "LSB;label=32;scalar=64";
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+98
+(
+    frontAndBack
+    {
+        type            patch;
+        nFaces          0;
+        startFace       249909;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          0;
+        startFace       249909;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          0;
+        startFace       249909;
+    }
+    lowerWall
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          359;
+        startFace       249909;
+    }
+    upperWall
+    {
+        type            patch;
+        nFaces          0;
+        startFace       250268;
+    }
+    motorBike_frt-fairing:001%1
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       250268;
+    }
+    motorBike_windshield:002%2
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       250268;
+    }
+    motorBike_rr-wh-rim:005%5
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       250268;
+    }
+    motorBike_rr-wh-rim:010%10
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       250268;
+    }
+    motorBike_fr-wh-rim:011%11
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          1244;
+        startFace       250268;
+    }
+    motorBike_fr-wh-brake-disk:012%12
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_frame:016-shadow%13
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rear-susp:014%14
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rear-susp:014-shadow%15
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_frame:016%16
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rr-wh-rim:005-shadow%17
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rr-wh-chain-hub:022%22
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rearseat%24
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_frt-fairing%25
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_windshield%26
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_headlights%27
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_driversseat%28
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rear-body%29
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_fuel-tank%30
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_exhaust%31
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_rr-wh-rim%32
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       251512;
+    }
+    motorBike_fr-mud-guard%33
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          6577;
+        startFace       251512;
+    }
+    motorBike_fr-wh-rim%34
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          82;
+        startFace       258089;
+    }
+    motorBike_fr-wh-brake-disk%35
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       258171;
+    }
+    motorBike_fr-brake-caliper%36
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       258171;
+    }
+    motorBike_fr-wh-tyre%37
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          2631;
+        startFace       258171;
+    }
+    motorBike_hbars%38
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_fr-forks%39
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_chain%40
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rr-wh-tyre%41
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_square-dial%42
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_round-dial%43
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_dial-holder%44
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-susp%45
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-brake-lights%46
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-light-bracket%47
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_frame%48
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-mud-guard%49
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-susp-spring-damp%50
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_fairing-inner-plate%51
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_clutch-housing%52
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_radiator%53
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_water-pipe%54
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_water-pump%55
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_engine%56
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-shock-link%57
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-brake-fluid-pot-bracket%58
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-brake-fluid-pot%59
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_footpeg%60
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rr-wh-chain-hub%61
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rear-brake-caliper%62
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rider-helmet%65
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rider-visor%66
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rider-boots%67
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rider-gloves%68
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_rider-body%69
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_frame:0%70
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_frt-fairing:001-shadow%74
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_windshield-shadow%75
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       260802;
+    }
+    motorBike_fr-mud-guard-shadow%81
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          4344;
+        startFace       260802;
+    }
+    motorBike_fr-wh-brake-disk-shadow%83
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    motorBike_rear-mud-guard-shadow%84
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    motorBike_rear-susp-spring-damp-shadow%85
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    motorBike_radiator-shadow%86
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    motorBike_rear-shock-link-shadow%87
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    motorBike_rear-brake-fluid-pot-bracket-shadow%88
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    motorBike_rr-wh-chain-hub-shadow%89
+    {
+        type            wall;
+        inGroups        2(motorBikeGroup wall);
+        nFaces          0;
+        startFace       265146;
+    }
+    procBoundary64to16
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          492;
+        startFace       265146;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    16;
+    }
+    procBoundary64to65
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          1548;
+        startFace       265638;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    65;
+    }
+    procBoundary64to67
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          1038;
+        startFace       267186;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    67;
+    }
+    procBoundary64to68
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          6;
+        startFace       268224;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    68;
+    }
+    procBoundary64to69
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          21;
+        startFace       268230;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    69;
+    }
+    procBoundary64to70
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          483;
+        startFace       268251;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    70;
+    }
+    procBoundary64to71
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          603;
+        startFace       268734;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    71;
+    }
+    procBoundary64to73
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          4;
+        startFace       269337;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    73;
+    }
+    procBoundary64to74
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          72;
+        startFace       269341;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    74;
+    }
+    procBoundary64to75
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          1186;
+        startFace       269413;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    75;
+    }
+    procBoundary64to78
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          124;
+        startFace       270599;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    78;
+    }
+    procBoundary64to79
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          658;
+        startFace       270723;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    79;
+    }
+    procBoundary64to90
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          45;
+        startFace       271381;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    90;
+    }
+    procBoundary64to91
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          57;
+        startFace       271426;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    91;
+    }
+    procBoundary64to94
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          6;
+        startFace       271483;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    94;
+    }
+    procBoundary64to96
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          218;
+        startFace       271489;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    96;
+    }
+    procBoundary64to98
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          83;
+        startFace       271707;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    98;
+    }
+    procBoundary64to108
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          92;
+        startFace       271790;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    108;
+    }
+    procBoundary64to111
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          186;
+        startFace       271882;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    111;
+    }
+    procBoundary64to113
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          12;
+        startFace       272068;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    113;
+    }
+    procBoundary64to116
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          229;
+        startFace       272080;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    116;
+    }
+    procBoundary64to117
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          26;
+        startFace       272309;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    117;
+    }
+    procBoundary64to118
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          60;
+        startFace       272335;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    118;
+    }
+    procBoundary64to124
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          2;
+        startFace       272395;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    124;
+    }
+    procBoundary64to125
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          2;
+        startFace       272397;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    125;
+    }
+    procBoundary64to126
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          2;
+        startFace       272399;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        64;
+        neighbProcNo    126;
+    }
+)
+
+// ************************************************************************* //
