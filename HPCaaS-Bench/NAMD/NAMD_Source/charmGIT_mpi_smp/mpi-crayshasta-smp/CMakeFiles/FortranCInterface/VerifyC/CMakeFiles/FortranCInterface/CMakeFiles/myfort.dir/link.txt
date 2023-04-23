@@ -1,0 +1,2 @@
+/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/ar qc libmyfort.a  CMakeFiles/myfort.dir/mysub.f.o CMakeFiles/myfort.dir/my_sub.f.o CMakeFiles/myfort.dir/mymodule.f90.o CMakeFiles/myfort.dir/my_module.f90.o
+/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/ranlib libmyfort.a

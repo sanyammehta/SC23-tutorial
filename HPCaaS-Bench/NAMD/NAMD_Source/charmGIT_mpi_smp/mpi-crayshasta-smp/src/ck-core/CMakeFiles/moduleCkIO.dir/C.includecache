@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/io/fs_parameters.c
+fs_parameters.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/io/fs_parameters.h
+charm.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/io/charm.h
+lustre/lustreapi.h
+-
+lustre/lustre_user.h
+-
+errno.h
+-
+libgen.h
+-
+string.h
+-
+
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/io/fs_parameters.h
+stdlib.h
+-
+conv-config.h
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/src/libs/ck-libs/io/conv-config.h
+

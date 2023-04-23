@@ -1,0 +1,1 @@
+/cray/css/users/smehta/NAMD_CPU_bundle/NAMD_Git-2022-07-21_Source/charmGIT_mpi_smp/mpi-crayshasta-smp/bin/charmc    CMakeFiles/trace-converse.dir/trace-converse.C.o -o ../../lib/libtrace-converse.a  

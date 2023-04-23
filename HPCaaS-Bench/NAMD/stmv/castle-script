@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --ntasks=7
+#SBATCH --ntasks-per-socket=7
+#SBATCH --nodes=1
+#SBATCH --exclusive
+#SBATCH --hint=nomultithread
+#SBATCH -p castle
+#SBATCH --time=240
+#SBATCH --distribution=block:block
+
+#export FI_LOG_LEVEL=Info
+#export OMP_NUM_THREADS=1
+
+srun -n 7 -N 1 --cpu-bind=map_cpu:0,8,16,24,32,40,48 ./namd2-rome-novector +skip_cpu_topology +ppn 7 +pemap 1-7,9-15,17-23,25-31,33-39,41-47,49-55 +commap 0,8,16,24,32,40,48 +setcpuaffinity ./stmv.namd 
+#srun -n 14 -N 1 --cpu-bind=map_cpu:0,4,8,12,16,20,24,28,32,36,40,44,48,52 ./namd2-rome-novector +skip_cpu_topology +ppn 3 +pemap 1-3,5-7,9-11,13-15,17-19,21-23,25-27,29-31,33-35,37-39,41-43,45-47,49-51,53-55 +commap 0,4,8,12,16,20,24,28,32,36,40,44,48,52 +setcpuaffinity ./stmv.namd 
