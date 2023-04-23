@@ -1,0 +1,9 @@
+We only provide the OpenFOAM binary and the dataset here not the huge source code to keep the repository small.
+Also, we currently only provide the dataset for 128 rank case only whereas we ran it for 128, 256, 512, 1024 and 2048 ranks. This is again to keep the repository small.
+
+The binary was built with the Cray compiler and linked with cray-mpich. It is located at OpenFOAM_HPE_Rhel8.6_Craype2.7.17_V2012_BASERELEASE_O3DEFAULT/OpenFOAM-v2012/platforms/linux64CrayDPInt32Opt/bin/simpleFoam
+
+The run-script is Ofoam.x.96b. The commands of interest is located at lines 2604-2608 that contain the different distribution strategies that we test with OpenFOAM.
+
+We launch the run-script with the following options:
+sbatch -q hotlum --nodes=1 --ntasks-per-node=128 --exclusive --overcommit  --export=ALL,NPROC=128,DECOMP=0,MPITYPE=CRAY,AMD7702=1,ALT1=1,MACH=hotlum,CRAY_MPICH_USE_SRUN=1 ./Ofoam.x.96b
