@@ -1,19 +1,13 @@
-We use the source from FinanceBench by University of Delaware:
-"Accelerating Financial Applications on the GPU" which was presented at the Sixth Workshop on General Purpose Processing Using GPUs (GPGPU 6)
+HPCaaS-Bench is a suite of six applications from six key verticals in HPCaaS.
+The verticals and applications are:
 
-https://github.com/cavazos-lab/FinanceBench
+(1) Financial Services Industry - Monte Carlo Options Pricing
+(2) Life Sciences (Pharmaceuticals) - NAMD
+(3) Finite Element Analysis - OpenRadioss
+(4) Weather Forecasting - MPAS-A
+(5) Computational Fluid Dynamics - OpenFOAM
+(6) Oil and Gas Industry - Specfem3D (coming soon!)
 
-For our experiments, we use the OpenMP version of Monte-Carlo application from the FinanceBench suite.
-We made the following changes for our purpose:
-(1) Changed the compiler optimization flags from '-O3 -march=native' to '-Ofast'
-(2) We changed the compiler from g++ to CC, that points to the cray C++ compiler for this test.
-(3) We modified the source around Line 140 in file monteCarloKernelsCpu.c (please see comment there). This change was to allow the use of thread safe rand_r() function instead of rand(), which enabled excellent parallel performance needed for this test.
-(4) We also changed the number of samples to 10000000.
-
-To build the source, just type 'make'
-We use the targets 'craype-x86-genoa' and craype-x86-spr' to build for genoa and sapphire-rapids processor, respectively.
-
-To run, we used:
-
-env OMP_NUM_THREADS='n' ./monteCarloEngine.exe
-
+There's a directory for each of these applications that contains source code with build instructions/scripts and/or binaries with run instructions/scripts 
+depending on application and the experiment for the purpose of SC tutorial. We do not include source code (or all the datasets) in some cases to contain 
+the size of the repository here, but we will, of course, provide everything needed for the actual tutorial to make for a smooth and great experience!
