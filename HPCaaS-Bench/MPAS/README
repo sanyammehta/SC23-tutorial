@@ -1,0 +1,9 @@
+We did not make any source changes here, except for some changes in the Makefile within the MPAS-Model_120km-{cray,intel,gnu} directories.
+For MPAS-Model_120km-cray that uses the option cray-nersc with make, we added the option '-h byteswapio' to FFLAGS_OPT and LDFLAGS_OPT to allow the
+conversion of unformatted data between little- and big-endian representation (for facilitating moving of data between different systems).
+The intel and gnu compilers have the corresponding flags for this conversion by default.
+
+The build instructions/script is make_mpas.sh
+The exercise in the tutorial involves building with optimization levels O3 and Ofast with the three compilers and observe the performance differences.
+
+The run instructions/script is run_mpas.sh
