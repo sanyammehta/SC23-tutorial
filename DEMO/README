@@ -1,1 +1,26 @@
-Contains a small demo to help with logging into HPE devCloud, Breckenridge
+# Cirrus demo
+
+## Signing up for an account
+
+To sign up for Cirrus Devcloud (called breckenridge), create a new Keycloak account at
+
+    https://breckenridge.cloud
+
+Once your account is created, an administrator will send you a Wireguard VPN configuration. This will allow you to access Devcloud without needing a password to log in.
+[For SC23, the attendees will follow this simple process to obtain guest accounts either before or even during the tutorial]
+
+## Accessing Cirrus
+
+[cirrus-vpn.mov starts here]
+
+First, configure and initialize your Wireguard VPN connection. Add the `Breckenridge.conf` VPN profile to Wireguard, then click `Activate`.
+
+[demo-devCloud-sw+hw.mov starts here]
+
+Next, SSH to `username@login.customer.local`. You will be presented with a standard Bash prompt, with all Cray Development Environment modules available.
+
+## Building an application with different compilers and compiler targets or processors
+
+We show how to build the Monte Carlo Options Pricing application with both gnu and cray compilers while targeting different processors such as AMD Rome and Intel Sapphire Rapids.
+
+The users can appreciate the variety of options among software and hardware to choose from in this demo. The tutorial itself will focus on educating the attendees on how to make the best choices among these many available options through different HPC applications as examples.
