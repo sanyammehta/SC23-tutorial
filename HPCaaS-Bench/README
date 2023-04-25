@@ -9,5 +9,6 @@ The verticals and applications are:
 (6) Oil and Gas Industry - Specfem3D (coming soon!)
 
 There's a directory for each of these applications that contains source code with build instructions/scripts and/or binaries with run instructions/scripts 
-depending on application and the experiment for the purpose of SC tutorial. We do not include source code (or all the datasets) in some cases to contain 
-the size of the repository here, but we will, of course, provide everything needed for the actual tutorial to make for a smooth and great experience!
+depending on application and the experiment for the purpose of SC tutorial. Each of those sub-directories also contains a README that provides more details
+about the content and the experiment. We do not include source code (or all the datasets) in some cases to contain the size of the repository here, 
+but we will, of course, provide everything needed for the actual tutorial to make for a smooth and great experience!
