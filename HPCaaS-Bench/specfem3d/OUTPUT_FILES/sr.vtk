@@ -1,0 +1,11 @@
+# vtk DataFile Version 2.0
+Source and Receiver VTK file
+ASCII
+DATASET POLYDATA
+POINTS      5 float
+      0.670000E+05      0.670000E+05     -0.300000E+05
+      0.227321E+05      0.670000E+05      0.000000E+00
+      0.346964E+05      0.670000E+05      0.000000E+00
+      0.466607E+05      0.670000E+05      0.000000E+00
+      0.586250E+05      0.670000E+05      0.000000E+00
+

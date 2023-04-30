@@ -1,0 +1,11 @@
+Instructions on how to build and run specfem3D for the proposed lab in SC23 tutorial:
+
+For build:
+# We load the gnu programming environment to build it with the gnu compiler
+module swap PrgEnv-cray PrgEnv-gnu
+./configure FC=ftn CC=cc MPIFC=ftn FCFLAGS='-g -O3 -fallow-argument-mismatch'
+make all
+
+To run, follow the instructions within:
+./run_this_example.sh
+# We use specfem3D to show how we can save power/energy by running an application at different frequencies, the provided run instructions also point to specific options to enable this, which we shall use for the experiment. The users then will be able to see the power/energy consumed by various runs using available power monitoring (pm) counters on devCloud hardware.

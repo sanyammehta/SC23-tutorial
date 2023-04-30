@@ -1,0 +1,241 @@
+
+ *****************************************
+ *** Specfem3D MPI database generation ***
+ *****************************************
+
+ Running Git package version of the code: v4.0.0-1-g5275e1f0
+ which is Git 5275e1f01a4b1397bb2efb0280091581d8527c84
+ dating 2023-03-14 17:36:22 +0100
+
+ This is process            0
+ There are           48  MPI processes
+ Processes are numbered from 0 to           47
+
+ There is a total of           48  slices
+
+ NGLLX =            5
+ NGLLY =            5
+ NGLLZ =            5
+
+ Shape functions defined by NGNOD =            8  control nodes
+ Surface shape functions defined by NGNOD2D =            4  control nodes
+ Beware! Curvature (i.e. HEX27 elements) is not handled by our internal mesher
+
+ velocity model:   default 
+
+
+ suppressing UTM projection
+
+ no attenuation
+
+ no anisotropy
+
+ no oceans
+
+ incorporating Stacey absorbing conditions
+
+ using a CMTSOLUTION source
+   with a Gaussian source time function
+
+
+ ************************************
+ reading partition files in the model
+ ************************************
+
+ external mesh points :        30675
+ defined materials    :            1
+ undefined materials  :            0
+ total number of spectral elements:        20736
+ absorbing boundaries: 
+   xmin,xmax :          576         576
+   ymin,ymax :          576         576
+   bottom,top:         1296        1296
+
+   total number of C-PML elements in the global mesh:            0
+
+ number of MPI partition interfaces:          598
+
+   minimum memory used so far     :    2.15620232     MB per process
+   minimum total memory requested :    7.39232540     MB per process
+
+ create regions:
+
+   ...allocating arrays 
+     NGLLX   =            5
+     NGLLY   =            5
+     NGLLZ   =            5
+     NGNOD   =            8
+     NGNOD2D =            4
+
+     main process setup: 
+     nspec           =          411
+
+     separating regular/irregular element shapes
+     nspec regular   =            0
+     nspec irregular =          411
+
+     absorbing boundary faces:
+       num_abs_boundary_faces =           48
+
+     free surface faces:
+       num_free_surface_faces =           81
+
+
+ File DATA/Par_file_faults not found: assuming that there are no faults
+
+
+   ...setting up jacobian 
+
+   ...indexing global points
+      creating ibool indexing     : x min/max =    0.00000000     /   134000.000    
+      creating indirect addressing: nglob =        29233
+      creating unique point locations
+
+   ...preparing MPI interfaces 
+      number of interfaces        :           10
+      creating MPI indexing       : x min/max =    0.00000000     /   134000.000    
+                                    tolerance =    1.3400000000000000E-005
+
+      total MPI interface points:       223218
+      total assembled MPI interface points:      205084
+
+   ...setting up absorbing boundaries
+      boundary xmin   :           0
+      boundary xmax   :           0
+      boundary ymin   :          48
+      boundary ymax   :           0
+      boundary bottom :           0
+      boundary top    :          81
+      absorbing boundary:
+      total number of free faces =         1296
+      total number of faces      =         3600
+
+   ...setting up mesh surface
+
+   ...determining velocity model
+               10  % time remaining:   4.1981844738359086E-006 s
+               20  % time remaining:   4.8984038270027952E-006 s
+               30  % time remaining:   5.4053146102406302E-006 s
+               40  % time remaining:   4.6315559637521986E-006 s
+               50  % time remaining:   3.9932390594188405E-006 s
+               60  % time remaining:   3.4091056837354250E-006 s
+               70  % time remaining:   2.5488323454406214E-006 s
+               80  % time remaining:   1.8014348383416090E-006 s
+               90  % time remaining:   9.0601457789808715E-007 s
+              100  % time remaining:   2.1210579341946617E-008 s
+
+   ...detecting acoustic-elastic-poroelastic surfaces 
+      total acoustic elements   :           0
+      total elastic elements    :       20736
+      total poroelastic elements:           0
+
+      acoustic - elastic     coupling : total number of faces =            0
+      acoustic - poroelastic coupling : total number of faces =            0
+       elastic - poroelastic coupling : total number of faces =            0
+
+
+   ...element inner/outer separation 
+      for overlapping of communications with calculations:
+      percentage of   edge elements    45.4987831     %
+      percentage of volume elements    54.5012169     %
+
+   ...element mesh coloring 
+      use coloring =  F
+
+   ...external binary models 
+      no external binary model used 
+
+   ...creating mass matrix 
+
+   ...saving mesh databases
+      using binary file format
+      database file (for rank 0): OUTPUT_FILES/DATABASES_MPI/proc000000_external_mesh.bin
+      saving mesh files for AVS, OpenDX, Paraview
+      saving additonal mesh files with surface/coupling points
+
+   ...checking mesh resolution
+ Mesh resolution:
+
+ ********
+ minimum and maximum number of elements
+ and points in the CUBIT + SCOTCH mesh:
+
+ NSPEC_global_min =          405
+ NSPEC_global_max =          453
+ NSPEC_global_max / NSPEC_global_min imbalance =    1.11851847      =    11.8518515      %
+ NSPEC_global_sum =        20736
+
+ NGLOB_global_min =        28749
+ NGLOB_global_max =        32065
+ NGLOB_global_max / NGLOB_global_min imbalance =    1.11534309      =    11.5343142      %
+ NGLOB_global_sum =      1471584
+
+ If you have elements of a single type (all acoustic, all elastic, all poroelastic, and without CPML)
+ in the whole mesh, then there should be no significant imbalance in the above numbers.
+ Otherwise, it is normal to have imbalance in elements and points because the domain decomposer
+ compensates for the different cost of different elements by partitioning them unevenly among processes.
+ ********
+
+
+ ********
+ Model: P   velocity min,max =    2800.00000       2800.00000    
+ Model: S   velocity min,max =    1500.00000       1500.00000    
+
+ Model: Poisson's ratio min,max =   0.298747778      0.298747778    
+ ********
+
+ *********************************************
+ *** Verification of simulation parameters ***
+ *********************************************
+
+ *** Xmin and Xmax of the model =    0.00000000       134000.000    
+ *** Ymin and Ymax of the model =    0.00000000       134000.000    
+ *** Zmin and Zmax of the model =   -60000.0000       0.00000000    
+
+ *** Max GLL point distance =    1227.47656    
+ *** Min GLL point distance =    642.726562    
+ *** Max/min ratio =    1.90979588    
+
+ *** Max element size =    3750.00000    
+ *** Min element size =    3722.21875    
+ *** Max/min ratio =    1.00746357    
+
+ *** Minimum period resolved =    3.12500000    
+ *** Maximum suggested time step =   0.114772603    
+
+ Elapsed time for checking mesh resolution in seconds =    1.1703968048095703E-003
+ saving VTK files for Courant number and minimum period
+
+
+ mesh regions done
+
+ min and max of elevation (i.e. height of the upper surface of the mesh) included in mesh in m is    0.0000000000000000          0.0000000000000000     
+
+
+ done mesh setup
+
+
+ Repartition of elements:
+ -----------------------
+
+ total number of elements in mesh slice 0:          411
+ total number of   regular elements in mesh slice 0:            0
+ total number of irregular elements in mesh slice 0:          411
+ total number of points in mesh slice 0:        29233
+
+ total number of elements in entire mesh:        20736
+ approximate total number of points in entire mesh (with duplicates on MPI edges):               1471584
+ approximate total number of DOFs in entire mesh (with duplicates on MPI edges):               4414752
+
+ total number of time steps in the solver will be:         5000
+
+ using single precision for the calculations
+
+ smallest and largest possible floating-point numbers are:    1.17549435E-38   3.40282347E+38
+
+
+ Elapsed time for mesh generation and buffer creation in seconds =    11.345936298370361     
+ End of mesh generation
+
+ done
+
